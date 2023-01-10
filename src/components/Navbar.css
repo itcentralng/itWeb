@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.navbar h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #0070C0;
+    cursor: pointer;
+}
+.nav--items ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+.nav--item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+}
+.nav--item a:hover{
+    color: #0070C0;
+}
+@media only screen and (max-width: 768px) {
+    /* CSS styles for mobile devices go here */
+    .navbar{
+        height: 50px;
+    }
+    .navbar h3{
+        font-size: 20px;
+        font-weight: 700;
+        color: #0070C0;
+        cursor: pointer;
+    }
+    .nav--items ul{
+        display: none;
+        list-style: none;
+        gap: 80px;
+    }
+    
+  }
+  

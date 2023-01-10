@@ -1,0 +1,28 @@
+.card{
+    height: 250px;
+    width: 250px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding-left: 26px;
+    padding-top: 32px;
+    border-radius:5px;
+      
+
+}
+.card img{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(0,112,192, 0.05);
+}
+.card h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card:hover{
+    box-shadow: 0px 0px 45px -6px #00000021;
+    overflow: visible;
+}
+.card--wrapper{
+    display: flex;
+    justify-content: space-between;
+}

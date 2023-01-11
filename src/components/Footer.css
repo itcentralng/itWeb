@@ -1,17 +1,19 @@
-.footer{
+#footer{
     display: flex;
     justify-content: space-between;
 }
-.footer h4{
+#footer h4{
     color: #0070C0;
     margin-bottom: 30px;
 }
-.footer ul{
+#footer ul{
     text-decoration: none;
     list-style: none;
 }
-.footer ul li{
+#footer ul li{
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 .map--here{
     height: 180px;

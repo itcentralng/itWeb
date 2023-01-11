@@ -1,8 +1,21 @@
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .navbar{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
 }
 .navbar h3{
     font-size: 25px;
@@ -14,6 +27,7 @@
     display: flex;
     list-style: none;
     gap: 80px;
+    cursor: pointer;
 }
 .nav--item a{
     text-decoration: none;
@@ -41,5 +55,4 @@
         gap: 80px;
     }
     
-  }
-  
+}

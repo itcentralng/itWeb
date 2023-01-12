@@ -21,3 +21,9 @@
     background-color: #0070C0;
     border-radius: 15px;
 }
+
+a {
+    text-decoration: none; /* removes underline */
+    color: inherit; /* inherits text color from parent element */
+  }
+  

@@ -23,7 +23,7 @@ function Navbar() {
     <div className="wrapper" style={{boxShadow}}>
       <div className="navbar">
           <div className="logo">
-              <h3>iT Central</h3>
+              <h3><Link to={"/"}>iT Central</Link></h3>
           </div>
           <div className="nav--items">
               <ul>

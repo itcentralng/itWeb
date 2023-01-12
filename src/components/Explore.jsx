@@ -8,26 +8,25 @@ import Card from './Card'
 
 function Explore() {
     const ExploreData = Data.map(function(eachData){
-        return <Card key = {eachData.title} title = {eachData.title} info = {eachData.info}/>
+        return <Card key = {eachData.title} title = {eachData.title} info = {eachData.info} icon = {eachData.icon}/>
     })
   return (
     <div id='Explore'>
       <>
-        <h2>Explore What <br /> We Offer</h2>
+      <h2>Explore our <br/>Services</h2>
       </>
         <div className='cards'>
           {ExploreData}
         </div>
       <div className="specialization">
-        <h2>Our Industry <br /> Specialization</h2>
-        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+      <h2>Our Area of Expertise</h2>
+        <p>IT Central specializes in providing software development services, including web and mobile development, UI/UX design, and training programs that help businesses and developers achieve their goals. Our team of experts have a wealth of experience in a variety of technologies and programming languages, and we have served a range of clients including Julius Berger Nigeria, Nigerian Airforce and Schoola</p>
       </div>
       <Banner/>
       {/* <div className="banner">
         <img src="./images/banner.svg" alt="" />
       </div> */}
       <div className="advert">
-        
       </div>
     </div>
   )

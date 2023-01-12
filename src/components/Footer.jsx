@@ -9,11 +9,11 @@ function Footer() {
       <div className="contact--us">
         <h4>Contact Us</h4>
         <ul>
-          <li><Call/> Phone_number</li>
-          <li><Email/>Email_Addess</li>
-          <li><Facebook/> Accout</li>
-          <li><Twitter/> Twitter_handle</li>
-          <li><LinkedIn/>LinkedIn_account</li>
+          <li><Call/> +234 808 888 5123</li>
+          <li><Email/>itcentralng@gmail.com</li>
+          <li><Facebook/><a href='https://web.facebook.com/itcentralng' target={"_blank"}>@itcentralng</a></li>
+          <li><Twitter/><a href='http://twitter.com/itcentralng' target={"_blank"}>@itcentralng</a></li>
+          <li><LinkedIn/><a href='https://www.linkedin.com/showcase/itcentralng/' target={"_blank"}>@itcentralng</a></li>
         </ul>
       </div>
       <div className="customer--care">
@@ -21,7 +21,7 @@ function Footer() {
         <ul>
           <li>About Us</li>
           <li>Courses</li>
-          <li>Privacy Policy</li>
+          <li><a href='/privacy'>Privacy Policy</a></li>
         </ul>
       </div>
       <div className="location">

@@ -6,16 +6,16 @@ function HeroSection() {
   return (
     <div id='hero--container'>
       <div className="hero--writings">
-        <h6>Mr. Teey Investment Ltd Company</h6>
-        <h2>Some Kind of headline for user <br /> to read</h2>
-        <p>We specialise in delivering end-to-end services and <br /> mobile & web applications to innovative companies <br /> around the world.</p>
+        <h6>IT Central Limited</h6>
+        <h2>Empowering businesses and developers</h2>
+        <p>Unlock your full potential with our software solutions and training programs. Let us help you achieve your goals.</p>
         <Link to="Explore"
           smooth={true}
           offset={-50}
-          duration={500} class = "hero--btn">Lets Build</Link>
+          duration={500} class = "hero--btn">Explore</Link>
       </div>
       <div className="hero--image">
-          <img src="./Images/itcentral-hero2.jpg" alt="" />
+          <img src="./Images/itcentral-hero2.jpg" alt="IT Central Team of developers working on computers" />
       </div>
         
       

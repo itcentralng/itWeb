@@ -1,7 +1,6 @@
 import React from 'react'
 import "../components/Footer.css"
 import Iframe from 'react-iframe'
-import { Call, Email, Facebook, LinkedIn, Twitter } from '@material-ui/icons'
 
 function Footer() {
   return (
@@ -10,11 +9,11 @@ function Footer() {
         <div className="contact--us">
           <h4>Contact Us</h4>
           <ul>
-            <li><Call/> Phone_number</li>
-            <li><Email/>Email_Addess</li>
-            <li><Facebook/> Accout</li>
-            <li><Twitter/> Twitter_handle</li>
-            <li><LinkedIn/>LinkedIn_account</li>
+            <li> Phone_number</li>
+            <li>Email_Addess</li>
+            <li>Accout</li>
+            <li>Twitter_handle</li>
+            <li>LinkedIn_account</li>
           </ul>
         </div>
         <div className="customer--care">

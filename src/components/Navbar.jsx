@@ -3,8 +3,6 @@ import '../components/Navbar.css'
 import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 import { Router } from 'react-router-dom'
-import { ConnectedTvOutlined } from '@mui/icons-material'
-import { height } from '@mui/system'
 function Navbar() {
     const [boxShadow, setBoxShadow] = useState('blue')
 

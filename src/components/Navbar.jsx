@@ -20,8 +20,8 @@ function Navbar() {
         };
       }, []);
   return (
-    <div className="wrapper" style={{boxShadow}}>
-      <div className="navbar">
+    <div className="navbar" style={{boxShadow}}>
+      <div className="container">
           <div className="logo">
               <h3>iT Central</h3>
           </div>

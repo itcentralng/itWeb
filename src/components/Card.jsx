@@ -7,7 +7,7 @@ function Card(props) {
     return (
 
             <div className='card' onMouseOver={() =>{setIsHovered(true);}} onMouseOut = {() =>{setIsHovered(false)}}>
-                <img src={isHovered ? props.icon.colored : props.icon.outline }height="50px" width ="50px" alt="" style={{backgroundColor: isHovered? 'rgb(0,112,192)' :'rgb(0,112,192, 0.05)'}} />
+                <img src={isHovered ? props?.icon?.colored : props?.icon?.outline }height="50px" width ="50px" alt="" style={{backgroundColor: isHovered? 'rgb(0,112,192)' :'rgb(0,112,192, 0.05)'}} />
                 <h4>{props.title}</h4>
                 <p>{props.info}</p>   
  

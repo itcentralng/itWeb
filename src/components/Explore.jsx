@@ -2,6 +2,7 @@ import React from 'react'
 import "../components/Explore.css"
 import Data from "../Data.json"
 import Card from './Card'
+import Banner from './Banner'
 
 
 

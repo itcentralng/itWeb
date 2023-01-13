@@ -2,7 +2,7 @@
   "name": "itweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://itcentralng.github.io/itWeb",
+  "homepage": "http://itcentralng.github.io/itWeb/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -21,6 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "predeploy" : "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -11,15 +11,15 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <div className="container">
+      {/* <div className="container"> */}
         <div className="App">
               <Routes>
                 <Route exact path="/" element={<HomePage/>} />
                 <Route exact path="/privacy" element={<PrivacyPage/>} />
               </Routes>
         </div>
+      {/* </div> */}
       <Footer/>
-      </div>
     </Router>
 
   );

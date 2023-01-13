@@ -1,20 +1,52 @@
-.Explore{
-    padding-top: 400px;
+#Explore{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x:hidden ;
+    
 }
-.cards{
+#Explore h2{
+    font-size: 29px;
+}
+
+.container{
+    width: 90%;
+    padding-top: 20px;
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#Explore .cards{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
     margin: 50px 0px;
+    white-space:nowrap;
+    overflow-x: scroll;
+    height: 50vh;
+
 }
+#Explore .card{
+    flex: 0 0 20%;
+    white-space: normal;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
 .specialization{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 25vh;
 }
 .specialization h2{
     flex: 1;
+    font-size: 29px;
 }
 .specialization p{
     flex: 4;
@@ -26,12 +58,29 @@
 .banner img{
     width: 100%;
 }
-.advert{
-    height: 250px;
-    width: 100%;
-    background-color: #0070C0;
-    border-radius: 20px ;
-    margin: 50px 0px
+@media only screen and (max-width: 430px){
+    #Explore h2{
+        font-size: 22px;
+        margin:auto;
+    }
+    #Explore .cards{
+        height: 50vh;
+    
+    }
+    #Explore .card{
+        flex: 0 0 70%;
+        white-space: normal;
+    }
+    .specialization{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .specialization h2{
+        font-size: 22px;
+    }
 
+    
+    
 }
 

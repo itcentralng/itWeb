@@ -1,5 +1,4 @@
-
-.wrapper{
+.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,13 +10,13 @@
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar .container{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar h3{
+.navbar .container h3{
     font-size: 25px;
     font-weight: 700;
     color: #0070C0;
@@ -26,20 +25,30 @@
 .nav--items ul{
     display: flex;
     list-style: none;
-    gap: 80px;
     cursor: pointer;
+    gap: 40px;
 }
 .nav--item a{
     text-decoration: none;
     font-size: 14px;
     color: #000000;
+    text-align: center;
     font-weight: 400;
+    transition: all ease-out .2s ;
+
+}
+.nav--item a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: #0070C0;
+    font-weight: 500;
+    transition: all ease-in .2s ;
 }
 .nav--item a:hover{
     color: #0070C0;
 }
-@media only screen and (max-width: 768px) {
-    /* CSS styles for mobile devices go here */
+@media only screen and (max-width: 767px){
+
     .navbar{
         height: 50px;
     }
@@ -54,5 +63,6 @@
         list-style: none;
         gap: 80px;
     }
+    
     
 }

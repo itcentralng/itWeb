@@ -1,13 +1,13 @@
 import React from 'react'
 import "../components/Explore.css"
 import Data from "../Data.json"
-import Banner from './Banner'
 import Card from './Card'
 
 
 
 function Explore() {
     const ExploreData = Data.map(function(eachData){
+
         return <Card key = {eachData.title} title = {eachData.title} info = {eachData.info} icon = {eachData.icon}/>
     })
   return (

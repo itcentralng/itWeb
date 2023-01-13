@@ -3,8 +3,6 @@ import '../components/Navbar.css'
 import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 import { Router } from 'react-router-dom'
-import { ConnectedTvOutlined } from '@mui/icons-material'
-import { height } from '@mui/system'
 function Navbar() {
     const [boxShadow, setBoxShadow] = useState('blue')
 
@@ -20,8 +18,8 @@ function Navbar() {
         };
       }, []);
   return (
-    <div className="wrapper" style={{boxShadow}}>
-      <div className="navbar">
+    <div className="navbar" style={{boxShadow}}>
+      <div className="container">
           <div className="logo">
               <h3><Link to={"/"}>iT Central</Link></h3>
           </div>

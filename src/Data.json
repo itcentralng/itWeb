@@ -1,6 +1,22 @@
 [
     {
-        "title": "Ideation & Strategy",
+        "title": "Sofware Development",
+        "info": "We offer expert software development services for web and mobile applications"
+    },
+    {
+        "title": "UI/UX Design",
+        "info": "We create beautiful and intuitive interfaces that will help you engage your users and drive conversions"  
+    },
+    {
+        "title": "Training Programs",
+        "info": "We provide training programs to help businesses and developers achieve their goals"  
+    },
+    {
+        "title": "Tech Consulting",
+        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
+    },
+    {
+        "title": "Sofware Development",
         "info": "We offer experience in building a new product"
     },
     {
@@ -13,31 +29,7 @@
     },
     {
         "title": "Low-code Development",
-        "info": "We will implement your idea based on low-code tech"  
-    },
-    {
-        "title": "Specialist Outsourcing",
-        "info": "We offer experience in building a new product"  
-    },
-    {
-        "title": "Ideation & Strategy",
-        "info": "We offer experience in building a new product"
-    },
-    {
-        "title": "Product Design",
-        "info": "We will create a beatiful and working design for your idea"  
-    },
-    {
-        "title": "Mobile & Web Development",
-        "info": "We specialise in delivering end-to-end services"  
-    },
-    {
-        "title": "Low-code Development",
-        "info": "We will implement your idea based on low-code tech"  
-    },
-    {
-        "title": "Specialist Outsourcing",
-        "info": "We offer experience in building a new product"  
+        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
     }
 ]
 

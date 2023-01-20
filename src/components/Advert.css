@@ -2,43 +2,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 55vh;
 }
 .advert .container{
-    width: 90%;
-    height: 30vh;
+width:80vw;    height: 30vh;
     background-color: #0070C0;
+    padding: 0 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
-    border-radius: 20px;
+    border-radius: 2rem;
+    box-sizing: border-box;
     
 }
 .advert h1{
-    font-size: 45px;
+    font-size: 4.5rem;
     color: white;    
 }
 .advert p{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: white;
     font-weight: 300;    
 }
 @media only screen and (max-width: 430px){
     .advert .container{
-        padding: 0 0;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        padding: 0px 0px;
         text-align: center;
-        
-    }
+    }   
     .advert h1{
-        font-size: 28px;
+        font-size: 2.8rem;
         color: white;    
     }
-    .advert p{
-
+    .advert .container{
+        height: 25vh;
+   }
+   .advert{
+       height: 35vh;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    .advert .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 0px;
+        text-align: center;
+    } 
+    .advert{
+        height: 35vh;
     }
-    
+   
+
 }

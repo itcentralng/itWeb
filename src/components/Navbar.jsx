@@ -5,23 +5,61 @@ import { Link as ScrollLink } from 'react-scroll'
 import { Router } from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
 function Navbar() {
-  function handleClick(){
-    console.log('hello')
+
+
+  
+  const [hamburgerState, setHamburgerState] = useState(false)
+  function handleClick(event) {
+    event.stopPropagation();
+    setHamburgerState(!hamburgerState)
     let lists = document.querySelector('ul');
     let computedStyle = window.getComputedStyle(lists);
     let height = computedStyle.getPropertyValue('height');
-    let navItems= document.querySelector('#nav--items')
-    
-    if(height === "0px"){
-      navItems.style.height = '60vh'
-      lists.style.height = "60vh"
-    }else{
-      lists.style.height = "0px"
-      navItems.style.height = '0'
+    let navItems = document.querySelector('#nav--items');
 
+    if (height === "0px") {
+      navItems.style.height = '60vh';
+      lists.style.height = "60vh";
+    } else {
+      lists.style.height = "0px";
+      navItems.style.height = '0';
     }
-    
+}
+document.addEventListener('click', (event) => {
+    let target = event.target;
+    let navItems = document.querySelector('#nav--items');
+    let lists = document.querySelector('ul');
+    let links = document.querySelector('a');
+
+
+
+    if (!target.matches('#nav--items') && !target.matches('ul') ) {
+      navItems.style.height = '0';
+      lists.style.height = "0px";
+      setHamburgerState(!hamburgerState)
+    }else{
+      console.log('nothing')
+    }
+});
+document.addEventListener('click', (event) =>{
+  let target = event.target;
+  let links = document.querySelector('a');
+  let navItems = document.querySelector('#nav--items');
+  let lists = document.querySelector('ul');
+
+  if(!target.matches('.nav--item')){
+    navItems.style.height = '0';
+    lists.style.height = "0px";
+    setHamburgerState(!hamburgerState)
+
+  }else{
   }
+
+
+
+})
+
+
   const [isOpen, setOpen] = useState(false)
 
     const [boxShadow, setBoxShadow] = useState('blue')
@@ -44,7 +82,7 @@ function Navbar() {
               <h3>iT Central</h3>
           </div>
           <div className="hamburger" onClick = {handleClick} >
-            <img src="/Images/Hamburger.svg" alt=""/>
+            <img src={hamburgerState? '/Images/cancel.svg' : '/Images/hamburger.svg'}  alt=""/>
 
           </div>
 

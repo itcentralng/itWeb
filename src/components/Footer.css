@@ -4,26 +4,28 @@
     align-items: center;
     flex-direction: column;
     background-color: #012A47;
+    padding: 5rem 0 0 0;
 }
 #footer h3{
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
     cursor: pointer;
 }
 #footer .copyright{
-    font-size: 13px;
+    font-size: 1.3rem;
     color: white;
     padding-right: 100px;
 }
 #footer .container{
-    display: flex;
+    width:80vw;   
+    display: flex;    
     justify-content: space-between  ;
 }
 #footer h4{
     color: white;
-    margin-bottom: 30px;
-    font-size: 18px;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 #footer ul{
@@ -31,21 +33,37 @@
     list-style: none;
 }
 #footer ul li{
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     color: white;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 300;
 }
+.container.last{
+    align-items: center;
+}
 .map--here{
-    height: 180px;
-    width: 425px;
-    border-radius: 15px;
+    height: 18rem;
+    width: 40.25rem;
+    border-radius: 1.5rem;
 }
 
 #footer iframe{
-    border-radius: 15px;
+    border-radius: 1.5rem;
+}
+#footer span{
+    margin-right: 1rem;
+}
+.span{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    width: 90%;
+}
+.span img{
+    margin-right: 2rem;
+    height: 3rem;
 }
 @media only screen and (max-width: 430px){
     #footer .container{
@@ -63,9 +81,37 @@
         display: none;
     }
     #footer .copyright h6{
-        font-size: 11px;
+        font-size: 1.1rem;
         font-weight: 300;
         margin: auto;
     }
+    .contact--us, .customer--care, .location{
+        margin-top: 3rem;
+    }
+    #footer .copyright{
+        font-size: 1.3rem;
+        color: white;
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+    }
     
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    #footer .container{
+        display: flex;
+        justify-content: space-between  ;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact--us-, .customer--care, .location{
+        width: 50%;
+    }
+    .location{
+        margin: auto;
+    }
+    #footer .copyright{
+        padding: 0;
+    }
+    
+
 }

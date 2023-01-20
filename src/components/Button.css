@@ -1,7 +1,7 @@
 .button-blue a{
     background-color: #0070C0;    
     border-radius: 4px;
-    padding: 15px 60px;
+    padding: 1.5rem 6rem;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
@@ -9,16 +9,17 @@
 }
 .button-blue a:hover{
     color: #0070C0;   
-    border: 2px solid #0070C0;
+    border: 0.2rem solid #0070C0;
     background-color: white; 
-    padding: 7px 45px;
-    font-size: 18px;
-    box-shadow: 10px 10px 115px -13px rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
+    padding: 0.7rem 4.5rem;
+    font-size: 2.0rem;
+    box-shadow: 1rem 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);
 }
 .button-darkBlue a{
-    background-color: #012A47;    
-    border-radius: 4px;
-    padding: 15px 60px;
+    background-color: #012A47;  
+    font-size: 1.6rem;  
+    border-radius: 0.4rem;
+    padding: 1.5rem 6rem;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
@@ -26,16 +27,17 @@
 }
 .button-darkBlue a:hover{
     color: #012A47;   
-    border: 2px solid #012A47;
+    border: 0.2rem solid #012A47;
     background-color: white; 
-    padding: 7px 45px;
-    font-size: 18px;
-    box-shadow: 10px 10px 115px -13px rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
+    padding: 0.7rem 4.5rem;
+    font-size: 1.8rem;
+    box-shadow: 1rem 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
 }
 .button-white a{
-    background-color: white;    
-    border-radius: 4px;
-    padding: 15px 60px;
+    background-color: white; 
+    font-size: 1.6rem;   
+    border-radius: 0.4rem;
+    padding: 1.5rem 6rem;
     color: #0070C0;
     text-decoration: none;
     cursor: pointer;
@@ -43,9 +45,9 @@
 }
 .button-white a:hover{
     color: white;   
-    border: 2px solid white;
+    border: 0.2rem solid white;
     background-color: #0070C0; 
-    padding: 7px 45px;
-    font-size: 18px;
-    box-shadow: 10px 10px 115px -13px rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
+    padding: 0.7rem 4.5rem;
+    font-size: 1.8rem;
+    box-shadow: 1re 1rem 11.5rem -1.3rem rgba(0,0,0,0.75);    transition: all ease-in-out .2s;
 }

@@ -8,19 +8,13 @@
     
     },
     {
-        "name": "Ledjar",
-        "info": "Schoola is a gamified learning platform that does many things like magic. it is truly magical and it works well",
-        "icon": "ledjar.svg",
-        "whiteIcon": "white-ledjar.svg"
-
-
-    },
-    {
-        "name": "Schoola",
+        "name": "InstaFood",
         "info": "Schoola is a gamified learning platform that does many things like magic. it is truly magical and it works well",
         "icon": "schoola.svg",
         "whiteIcon": "white-schoola.svg"
 
     }
+
+
 ]
 

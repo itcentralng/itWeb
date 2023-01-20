@@ -1,6 +1,7 @@
 #hero--container{
     background-color: #0070C00D;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -8,18 +9,19 @@
 }
 #hero--container .container{
     height: auto;
-    width: 90%;
+    width: 80vw ;
     /* padding: 70px 0px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-bottom: 40px;
-    padding-top: 90px;
+    padding-bottom: 4rem;
+    padding-top: 9rem;
 }
 
 .hero--writings{
     flex: 1;
+    padding-right: 1.5rem;
 }
 .hero--image{
     display: flex;
@@ -27,46 +29,75 @@
     flex: 1;
 }
 .hero--image img{
-    width: 100%;
+    width: 50rem;
     object-fit: cover;
     object-position: center;
-    border-radius: 30px;
+    border-radius: 3rem;
 }
 #hero--container h6{
     color: #0070C0;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 #hero--container h2{
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 #hero--container p{
-    font-size: 18px;
-    margin-bottom: 50px;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
 }
 @media only screen and (max-width: 430px){
-    #hero-container{
-        
+    #hero--container{
+        height: 50vh;
     }
     #hero--container h6{
         display: none;
     }
     #hero--container h2{
-        font-size: 23px;
+        font-size: 2.3rem;
         font-weight: 400;
     }
     #hero--container p{
-        font-size: 14px;
-        margin-bottom: 50px;
+        font-size: 1.4rem;
+        margin-bottom: 5rem;
     }
     .hero--writings{
-        padding: 0 20px;
+        padding: 0 2rem;
         text-align: center;
-        margin: 50px 0px;
+        margin: 5rem 0rem;
     }
     .hero--image{
         display: none;
     }
+    
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    #hero--container .container{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    #hero--container{
+        /* margin: 0rem 0rem 0rem 0rem; */
+        text-align: center;
+        height: auto;
+    }
+    #hero--container h6{
+        display: none;
+    }
+    #hero--container h2{
+        font-size: 4rem;
+    }
+    #hero--container p{
+        font-size: 2rem;
+    }
+    .hero--image {
+        display: none;
+    }
+
+    
+
+    
 }

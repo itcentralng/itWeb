@@ -2,15 +2,55 @@
     display: flex;
     justify-content: center;
     overflow-x:hidden ;
+    position: relative;
     
 }
-#Explore h2{
-    font-size: 29px;
+#left{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    /* border: 1px solid #0070C0 ; */
+    transition: all ease-in-out .2s;
+    /* padding-right: 30px; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    margin-left: 2rem;
+}
+#right{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    /* border: 1px solid #0070C0 ; */
+    transition: all ease-in-out .2s;
+    /* padding-right: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+}
+#right:hover, #left:hover{
+    box-shadow: 1rem 1rem 11.5rem -1.3rem rgba(0,0,0,0.75); 
+    transition: all ease-in-out .2s;   
+    background-color: white;
 }
 
-.container{
-    width: 90%;
-    padding-top: 20px;
+#Explore h2{
+    font-size: 2.9rem;
+}
+
+#Explore .container{
+width:80vw;    padding-top: 2rem;
     display: flex;
     /* justify-content: flex-end; */
     flex-wrap: wrap;
@@ -22,12 +62,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: auto;
-    margin: 50px 0px;
+    width: 100%;
+    /* margin: 50px 0px; */
     white-space:nowrap;
     overflow-x: scroll;
-    height: 50vh;
-
+    height: 45vh;
+    
 }
 #Explore .card{
     flex: 0 0 20%;
@@ -42,29 +82,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 35rem;
+    padding-bottom:2rem ;
 }
 .specialization h2{
     flex: 1;
-    font-size: 29px;
+    font-size: 2.9rem;
 }
 .specialization p{
     flex: 4;
+    font-size: 1.4rem;
 }
-.banner{
+/* .banner{
     width: 100%;
     margin: 50px 0px;
 }
 .banner img{
     width: 100%;
-}
+} */
 @media only screen and (max-width: 430px){
     #Explore h2{
-        font-size: 22px;
+        font-size: 2.2rem;
         margin:auto;
     }
     #Explore .cards{
-        height: 50vh;
+        height: 50rem;
     
     }
     #Explore .card{
@@ -77,10 +119,23 @@
         text-align: center;
     }
     .specialization h2{
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 
     
     
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    #Explore .card{
+        flex: 0 0 50%;
+        white-space: normal;
+    }
+    .specialization{
+        flex-direction: column;
+        text-align: center;
+        height: 25rem;
+    }
+    
+    
 
+}

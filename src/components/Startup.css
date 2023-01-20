@@ -2,27 +2,146 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: auto;
+    padding: 8rem 0;
     background-color: #0070C00D;
     box-sizing: border-box;
     
 
 }
 #startup .container{
+    width:80vw;   
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #startup h2{
-    font-size: 29px;
+    font-size: 2.9rem;
 }
 #startup .cards{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: auto;
-  margin: 50px 0px;
+  margin: 5rem 0;
+}
+#workedFor{
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+    background-color: #012A47;
+    width: 100%;
+}
+#workedFor h4{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+#workedFor .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+    background: white;
+    width: 80vw;
+    height: 10vh;
+    /* z-index: 0; */
+
+}
+.slick-track{
+    height: 100%;
+}
+.slick-slider div{
+    height: 100%;
+    
+}
+.startup-btn{
+    border-left: 3rem solid #0070C0;
+    margin-top: 2.4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.startup-btn a{
+    margin-left: 2rem;
+    color: #0070C0;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 @media only screen and (max-width: 430px){
+    #startup{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #startup .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: auto;
+        margin: 50px 0px; */
+    }
+    #workedFor h4{
+        display: none;
+    }
+    
+    #startup .card{
+        margin-bottom: 5rem;
+        width: 90%;
+    }
+    #workedFor{
+        display: flex;
+        justify-content: center;
+        height: 7vh;
+        background-color: #012A47;
+        width: 100%;
+    }
+    .slick-slider .slick-list {
+        transform: translate3d(0, 0, 0);
+        background: white;
+        width: 90vw;
+        height: 5vh;
+        /* z-index: 0; */
+    
+    }
+    .slick-track{
+        height: 100%;
+    }
+    .slick-slider div{
+        height: 100%;
+    }
+        
+    
   
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    #workedFor{
+        height: 10vh;
+    }
+    #workedFor h4{
+        display: none;
+    }
+    .slick-slider .slick-list {
+        width: 90vw;
+        height: 7vh;
+    }
+    .slick-track{
+        height: 100%;
+    }
+    .slick-slider div{
+        height: 100%;
+    }
+        
+    
 
 }

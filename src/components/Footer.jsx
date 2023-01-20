@@ -9,11 +9,12 @@ function Footer() {
         <div className="contact--us">
           <h4>Contact Us</h4>
           <ul>
-            <li> Phone_number</li>
-            <li>Email_Addess</li>
-            <li>Accout</li>
-            <li>Twitter_handle</li>
-            <li>LinkedIn_account</li>
+            <li><span><img src="Images/phone.svg" alt="" /></span> +234 808 888 5123</li>
+            <li><span><img src="Images/email.svg" alt="" /></span> itcentralng@gmail.com</li>
+            {/* <li><span className = 'span'><img src="Images/facebook.svg" alt="" /><img src="Images/linkedin.svg" alt="" /><img src="Images/twitter.svg" alt="" /></span></li> */}
+            <li><span><img src="Images/facebook.svg" alt="" /></span>@itcentralng</li>
+            <li><span><img src="Images/twitter.svg" alt="" /></span>@itcentralng</li>
+            <li><span><img src="Images/phone.svg" alt="" /></span>@itcentralng</li>
           </ul>
         </div>
         <div className="customer--care">
@@ -36,7 +37,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container">
+      <div className="container last">
           <div className="logo">
                   <h3>iT Central</h3>
             </div>

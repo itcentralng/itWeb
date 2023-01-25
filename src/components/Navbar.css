@@ -56,13 +56,12 @@
 .hamburger-react{
     display: none;
 }
-@media only screen and (max-width: 480px){
-
+@media only screen and (max-width: 430px){    
     .navbar{
         padding:1.5rem 0rem;
         height: auto;
 
-    }
+    }   
     .navbar h3{
         font-size: 2rem;
         font-weight: 700;
@@ -106,7 +105,7 @@
     
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+@media only screen and (max-width: 769px) and (max-width: 1024px) { 
     /* styles for tablets here */ 
     .navbar{
         padding:1.5rem 0rem;

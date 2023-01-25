@@ -6,61 +6,57 @@ import { Router } from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
 function Navbar() {
 
-
+  
   
   const [hamburgerState, setHamburgerState] = useState(false)
   function handleClick(event) {
     event.stopPropagation();
-    setHamburgerState(!hamburgerState)
     let lists = document.querySelector('ul');
     let computedStyle = window.getComputedStyle(lists);
     let height = computedStyle.getPropertyValue('height');
     let navItems = document.querySelector('#nav--items');
-
+    setHamburgerState(!hamburgerState)
     if (height === "0px") {
-      navItems.style.height = '60vh';
-      lists.style.height = "60vh";
+      navItems.style.height = '70rem';
+      lists.style.height = "70rem";
     } else {
       lists.style.height = "0px";
       navItems.style.height = '0';
     }
 }
+
+
 document.addEventListener('click', (event) => {
-    let target = event.target;
-    let navItems = document.querySelector('#nav--items');
-    let lists = document.querySelector('ul');
-    let links = document.querySelector('a');
-
-
-
-    if (!target.matches('#nav--items') && !target.matches('ul') ) {
-      navItems.style.height = '0';
-      lists.style.height = "0px";
-      setHamburgerState(!hamburgerState)
-    }else{
-      console.log('nothing')
-    }
+  let target = event.target;
+  let navItems = document.querySelector('#nav--items');
+  let lists = document.querySelector('ul');
+  let navItemsHeight = window.getComputedStyle(navItems).height;
+  
+  if (!navItems.contains(target) && navItemsHeight > '0px') {
+    navItems.style.height = '0';
+    lists.style.height = "0px";
+    setHamburgerState(!hamburgerState)
+  } else if (target.matches('#nav--items') || target.matches('.hamburger img')){
+    setHamburgerState(!hamburgerState)
+  } else {
+    setHamburgerState(false)
+  }
 });
+
+
 document.addEventListener('click', (event) =>{
   let target = event.target;
   let links = document.querySelector('a');
   let navItems = document.querySelector('#nav--items');
   let lists = document.querySelector('ul');
-
   if(!target.matches('.nav--item')){
     navItems.style.height = '0';
     lists.style.height = "0px";
-    setHamburgerState(!hamburgerState)
 
   }else{
   }
-
-
-
 })
-
-
-  const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false)
 
     const [boxShadow, setBoxShadow] = useState('blue')
 

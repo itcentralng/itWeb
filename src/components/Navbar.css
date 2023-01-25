@@ -22,7 +22,7 @@
     color: #0070C0;
     cursor: pointer;
 }
-.logo, .hamburger{
+.logo, .hamburger, .nav--items{
     height: 100%;
 }
 #nav--items ul{
@@ -30,6 +30,10 @@
     list-style: none;
     cursor: pointer;
     gap: 4rem;
+}
+.navbar .logo a{
+    color: #0070C0;
+    text-decoration: none;
 }
 .nav--item a{
     text-decoration: none;

@@ -30,9 +30,10 @@ document.addEventListener('click', (event) => {
   let target = event.target;
   let navItems = document.querySelector('#nav--items');
   let lists = document.querySelector('ul');
+  let link = document.querySelector('a')
   let navItemsHeight = window.getComputedStyle(navItems).height;
   
-  if (!navItems.contains(target) && navItemsHeight > '0px') {
+  if (!navItems.contains(target) && navItemsHeight > '0px' ) {
     navItems.style.height = '0';
     lists.style.height = "0px";
     setHamburgerState(!hamburgerState)
@@ -47,11 +48,13 @@ document.addEventListener('click', (event) => {
 document.addEventListener('click', (event) =>{
   let target = event.target;
   let links = document.querySelector('a');
+  let scrollLink = document.querySelector('.scroll--link')
   let navItems = document.querySelector('#nav--items');
   let lists = document.querySelector('ul');
-  if(!target.matches('.nav--item')){
+  if(!target.matches('.nav--item') && target.matches('.scroll--link')){
     navItems.style.height = '0';
     lists.style.height = "0px";
+    console.log('hello')
 
   }else{
   }
@@ -84,11 +87,11 @@ document.addEventListener('click', (event) =>{
 
           <div id="nav--items">
               <ul>
-                  <li className='nav--item'><ScrollLink to="hero--container" smooth={true} offset={-50} duration={500}>Home</ScrollLink></li>
+                  <li className='nav--item'><a className='scroll--link' href="#hero--container" smooth={true} offset={-50} duration={500}>Home</a></li>
                   <li className='nav--item'><Link to="">About Us</Link></li>
-                  <li className='nav--item'><ScrollLink to="Explore" smooth={true} offset={-50} duration={500}>Service</ScrollLink></li>
+                  <li className='nav--item'><Link className='scroll--link' to="Explore" smooth={true} offset={-50} duration={500}>Service</Link></li>
                   <li className='nav--item'><Link to="">Academy</Link></li>
-                  <li className='nav--item'><ScrollLink to="footer" smooth={true} offset={-50} duration={500}>Contact</ScrollLink></li>
+                  <li className='nav--item'><a className='scroll--link' href="#footer" smooth={true} offset={-50} duration={500}>Contact</a></li>
               </ul>
           </div>
       </div>

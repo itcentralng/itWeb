@@ -1,33 +1,41 @@
 [
     {
+        "id": 1,
         "title": "Sofware Development",
         "info": "We offer expert software development services for web and mobile applications"
     },
     {
+        "id": 2,
         "title": "UI/UX Design",
         "info": "We create beautiful and intuitive interfaces that will help you engage your users and drive conversions"  
     },
     {
+        "id": 3,
         "title": "Training Programs",
         "info": "We provide training programs to help businesses and developers achieve their goals"  
     },
     {
+        "id": 4,
         "title": "Tech Consulting",
         "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
     },
     {
+        "id": 5,
         "title": "Sofware Development",
         "info": "We offer experience in building a new product"
     },
     {
+        "id": 6,
         "title": "Product Design",
         "info": "We will create a beatiful and working design for your idea"  
     },
     {
+        "id": 7,
         "title": "Mobile & Web Development",
         "info": "We specialise in delivering end-to-end services"  
     },
     {
+        "id": 8,
         "title": "Low-code Development",
         "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
     }

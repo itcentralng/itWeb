@@ -63,7 +63,7 @@ function Explore() {
   // }
 
     const ExploreData = Data.map(function(eachData){
-        return <Card key = {eachData.title} title = {eachData.title} info = {eachData.info} trueImage = '/Images/White-bulb.svg' falseImage = '/Images/Blue-bulb.svg'  width = '33%' imageWidth = '50vw'/>
+        return <Card key = {eachData.id} title = {eachData.title} info = {eachData.info} trueImage = '/Images/White-bulb.svg' falseImage = '/Images/Blue-bulb.svg'  width = '33%' imageWidth = '50vw'/>
     })
   return (
     <div id='Explore'>

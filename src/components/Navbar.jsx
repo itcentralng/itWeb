@@ -30,7 +30,6 @@ document.addEventListener('click', (event) => {
   let target = event.target;
   let navItems = document.querySelector('#nav--items');
   let lists = document.querySelector('ul');
-  let link = document.querySelector('a')
   let navItemsHeight = window.getComputedStyle(navItems).height;
   
   if (!navItems.contains(target) && navItemsHeight > '0px' ) {
@@ -48,10 +47,9 @@ document.addEventListener('click', (event) => {
 document.addEventListener('click', (event) =>{
   let target = event.target;
   let links = document.querySelector('a');
-  let scrollLink = document.querySelector('.scroll--link')
   let navItems = document.querySelector('#nav--items');
   let lists = document.querySelector('ul');
-  if(!target.matches('.nav--item') && target.matches('.scroll--link')){
+  if(!target.matches('.nav--item')){
     navItems.style.height = '0';
     lists.style.height = "0px";
     console.log('hello')

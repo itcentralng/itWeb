@@ -18,8 +18,6 @@ function HeroSection() {
         <div className="hero--image">
             <img src="./Images/hero-3.svg" alt="" />
         </div>
-          
-
       </div>
       
     </div>

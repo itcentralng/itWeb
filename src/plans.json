@@ -1,0 +1,26 @@
+[
+    {
+        "plan": "BRONZE",
+        "price": "N 100,000",
+        "deliverable": ["Deliverable Item 1", "Deliverable Item 2", "Deliverable Item 3", "Deliverable Item 4"]
+        
+    
+    },
+    {
+        "plan": "SILVER",
+        "price": "N 200,000",
+        "deliverable": ["Deliverable Item 1", "Deliverable Item 2", "Deliverable Item 3", "Deliverable Item 4"]
+        
+    
+    },
+    {
+        "plan": "GOLD",
+        "price": "N 300,000",
+        "deliverable": ["Deliverable Item 1", "Deliverable Item 2", "Deliverable Item 3", "Deliverable Item 4"]
+        
+    
+    }
+
+
+]
+

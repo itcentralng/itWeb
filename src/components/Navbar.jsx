@@ -52,7 +52,6 @@ document.addEventListener('click', (event) =>{
   if(!target.matches('.nav--item')){
     navItems.style.height = '0';
     lists.style.height = "0px";
-    console.log('hello')
 
   }else{
   }

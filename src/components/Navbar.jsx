@@ -85,7 +85,7 @@ document.addEventListener('click', (event) =>{
           <div id="nav--items">
               <ul>
                   <li className='nav--item'><a className='scroll--link' href="#hero--container" smooth={true} offset={-50} duration={500}>Home</a></li>
-                  <li className='nav--item'><Link to="">About Us</Link></li>
+                  <li className='nav--item'><Link to="/about">About Us</Link></li>
                   <li className='nav--item'><Link className='scroll--link' to="Explore" smooth={true} offset={-50} duration={500}>Service</Link></li>
                   <li className='nav--item'><Link to="">Academy</Link></li>
                   <li className='nav--item'><a className='scroll--link' href="#footer" smooth={true} offset={-50} duration={500}>Contact</a></li>

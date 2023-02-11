@@ -1,7 +1,13 @@
-import {Container, FormControl, FormHelperText, FormLabel, Grid, InputLabel, makeStyles, MenuItem, Select, TextField, Typography } from '@material-ui/core'
+import {Container, FormControl, FormHelperText, FormLabel, Grid, InputLabel, makeStyles, MenuItem, Select, TextField, Typography, withStyles } from '@material-ui/core'
+import { ArrowDownward, ArrowDropDown, Delete, ExpandMore } from '@material-ui/icons'
 import React from 'react'
 import Button from '../components/Button'
 
+const CustomSelect = withStyles({
+    icon: {
+      fontSize: "30px",
+    },
+  })(Select);
 const useStyles = makeStyles({
     contactus:{
         height: '90rem',
@@ -78,18 +84,17 @@ function ContactUs() {
                                     <FormLabel className={classes.form}>Your Phone Number</FormLabel>
                                     <Select
                                     labelId="demo-simple-select-helper-label"
+                                    IconComponent={ExpandMore}
                                     id="demo-simple-select-helper"
                                     variant='outlined'
-                                    inputProps={{
-                                        style: {fontSize:'1.4rem'}
-                                    }}
+                                    style = {{fontSize:'1.4rem'}}
                                     >
-                                    <MenuItem value="">
+                                    <MenuItem value="" style = {{fontSize:'1.4rem'}}>
                                         <em>None</em>
                                     </MenuItem>
-                                    <MenuItem value={10}>Ten</MenuItem>
-                                    <MenuItem value={20}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
+                                    <MenuItem value={10} style = {{fontSize:'1.4rem'}}>UI/UX Design</MenuItem>
+                                    <MenuItem value={20} style = {{fontSize:'1.4rem'}}>Web App Development</MenuItem>
+                                    <MenuItem value={30} style = {{fontSize:'1.4rem'}}>Mobile App Development</MenuItem>
                                     </Select>
                                 </FormControl>
                             </form>

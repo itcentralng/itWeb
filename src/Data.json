@@ -1,43 +1,45 @@
 [
     {
         "id": 1,
-        "title": "Sofware Development",
-        "info": "We offer expert software development services for web and mobile applications"
+        "title": "Software Development",
+        "info": "We offer expert software development services for web and mobile applications",
+        "moreInfo": "iT Central offers software development services for web and mobile applications. The company's experienced team of developers provides end-to-end software development services that include requirement gathering, design, coding, testing, and deployment. The company uses latest technologies and best practices to deliver high-quality, reliable, and scalable software solutions that meet the specific needs of clients. The development process is transparent and involves regular communication with clients to ensure that the final product exceeds their expectations. iT Central's software development service is a comprehensive solution for businesses looking to build new software products or improve existing ones.\n\nUX/UI Design: We create beautiful and intuitive interfaces that will help you engage your users and drive conversions. iT Central offers UX/UI design services to businesses to create digital products that provide a meaningful and enjoyable user experience. The UX design process involves researching the target audience, prototyping, user testing, and iterating based on feedback. UI design focuses on the visual design and layout of the product, including its look and feel, typography, and color scheme. The team of designers at iT Central works closely with the client to understand their business goals and target audience to create a design that meets their needs and enhances the user experience. The process includes user research, wire framing and prototyping, testing with"
     },
     {
         "id": 2,
         "title": "UI/UX Design",
-        "info": "We create beautiful and intuitive interfaces that will help you engage your users and drive conversions"  
+        "info": "We create beautiful and intuitive interfaces that will help you engage your users and drive conversions",
+        "moreInfo": "iT Central offers UX/UI design services to businesses to create digital products that provide a meaningful and enjoyable user experience. The UX design process involves researching the target audience, prototyping, user testing, and iterating based on feedback. UI design focuses on the visual design and layout of the product, including its look and feel, typography, and color scheme. The team of designers at iT Central works closely with the client to understand their business goals and target audience to create a design that meets their needs and enhances the user experience. The process includes user research, wire framing and prototyping, testing with real users, and iterative improvements based on feedback."
     },
     {
         "id": 3,
-        "title": "Training Programs",
-        "info": "We provide training programs to help businesses and developers achieve their goals"  
+        "title": "Training Program",
+        "info": "We provide training programs to help businesses and developers achieve their goals",
+        "moreInfo": "iT Central provides training programs to help businesses and developers acquire new skills, knowledge, and capabilities to improve performance, productivity, and competitiveness. The programs cover a wide range of topics and can be delivered in-person, online, or virtual classes.The goal is to provide businesses and developers with the necessary tools and resources to succeed and create a knowledgeable, skilled, and capable workforce. The training programs arecomprehensive, tailored to meet specific needs, and delivered in various formats. They are designed to be engaging, interactive, and practical, allowing participants to apply their new knowledge in real-world situations."
+    },
+    {
+        "id": 3,
+        "title": "Tech Consulting",
+        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology",
+        "moreInfo": "Tech consulting is a service offered by iT Central to provide clients with technical advice and guidance in the constantly evolving technology landscape. The goal is to help organizations make informed decisions about their technology investments and initiatives. The consultants have expertise in various technology areas and offer customized solutions to meet clients' needs. The services offered include advising on software and hardware selection, infrastructure design and implementation, data management and security, and more. Tech consulting servicesalso involve project management, implementation support, and ongoing maintenance and support. The consultants ensure that clients' technology initiatives are completed successfully and deliver intended benefits."
     },
     {
         "id": 4,
-        "title": "Tech Consulting",
-        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
+        "title": "Product Design",
+        "info": "We will create a beautiful and working design for your idea",
+        "moreInfo": "iT Central offers product design services to help clients bring their ideas to life by creating visually appealing and functional designs.Product design is a process that involves creating and defining the form, function, and aesthetic of a product. This service can encompass the entire design process, from initial concept sketches to final production-ready design specifications, and everything in between. The goal of iT Central's product design service is to help clients take their ideas from concept to reality, delivering a product that looks good, works well, and meets their specific needs and requirements"
     },
     {
         "id": 5,
-        "title": "Sofware Development",
-        "info": "We offer experience in building a new product"
+        "title": "Mobile & Web Development",
+        "info": "We specialize in delivering end-to-end services",
+        "moreInfo": "Mobile and web development are areas of software engineering that focus on the creation of applications and websites that can be used on a variety of devices, including smartphones, tablets, and computers. iT Central offers end-to-end services in these areas, meaning they can provide clients with a complete solution for their mobile and web development needs. This can include everything from conceptualization and design to development, testing, and deployment of the final product.iT Central's expertise in mobile and web development allows them to create high-quality and user-friendly applications and websites that can meet the specific needs of their clients. This can include the development of custom software for specific business requirements, or the creation of mobile apps and websites for consumer use. Whatever the specific needs of the client, iT Central is equipped to provide them with a complete solution that meets their requirements and helps to achieve their goals."
     },
     {
         "id": 6,
-        "title": "Product Design",
-        "info": "We will create a beatiful and working design for your idea"  
-    },
-    {
-        "id": 7,
-        "title": "Mobile & Web Development",
-        "info": "We specialise in delivering end-to-end services"  
-    },
-    {
-        "id": 8,
         "title": "Low-code Development",
-        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology"  
+        "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology",
+        "moreInfo": "Low-code development is a software development methodology that emphasizes the use of visual, drag-and-drop tools to build applications, rather than writing extensive amounts of code. The goal of low-code development is to make it easier and faster for organizations to build, deploy, and maintain applications.iT Central offers low-code development services to help clients navigate the ever-changing landscape of technology. This can include technical consulting services to help clients understand the benefits and limitations of low-code development, as well as assistance in selecting the right low-code platform for their specific needs.With iT Central's low-code development services, clients can benefit from reduced development time, increased efficiency, and lower costs compared to traditional software development methods. Additionally, low-code development can also allow for more collaboration and faster iteration, as it enables non-technical stakeholders to participate in the development process and make changes as needed. Overall, iT Central's low-code development services can help clients to streamline their application development processes, increase their speed to market, and improve their overall competitiveness"
     }
 ]
 

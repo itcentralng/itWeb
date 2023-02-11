@@ -4,7 +4,9 @@ import HomePage from './pages/HomePage'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactUs from './pages/ContactUs';
+import AboutPage from './pages/AboutPage'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import PopUp from './components/PopUp';
 
 
 
@@ -29,15 +31,17 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Navbar/>
-        {/* <div className="container"> */}
+        {/* <PopUp/> */}
+        <div className="container">
           <div className="App">
                 <Routes>
                   <Route exact path="/" element={<HomePage/>} />
                   <Route exact path="/contactus" element={<ContactUs/>} />
+                  <Route exact path="/about" element={<AboutPage/>} />
                   
                 </Routes>
           </div>
-        {/* </div> */}
+        </div>
         <Footer/>
       </Router>
 

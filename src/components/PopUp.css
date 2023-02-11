@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.title{
+    font-size: 3rem !important;
+}
+p .info{
+    font-size: 2rem !important;
+    font-weight: 300 !important;
+}
+.more--info{
+    font-size: 1.7rem !important;
+}

@@ -81,7 +81,7 @@ function ContactUs() {
                         <Grid item lg = {6} xs = {12}>
                             <form>
                                 <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>Your Phone Number</FormLabel>
+                                    <FormLabel className={classes.form}>What are you interested in?</FormLabel>
                                     <Select
                                     labelId="demo-simple-select-helper-label"
                                     IconComponent={ExpandMore}

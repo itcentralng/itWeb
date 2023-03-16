@@ -1,6 +1,9 @@
 import { Container, Grid, Typography,makeStyles, Card, Paper } from '@material-ui/core'
 import { Height } from '@material-ui/icons'
 import React from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const useStyles =makeStyles({
   main: {
@@ -66,6 +69,10 @@ const useStyles =makeStyles({
 })
 
 function AboutPage() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   const classes = useStyles()
   return (
     <body style={{marginTop:"10rem"}}>
@@ -74,63 +81,83 @@ function AboutPage() {
             <Grid container xs = {12}>
               <Grid item xs = {12} md = {6}>
                 <Grid item md = {12}>
-                  <Typography variant = 'h2' className={classes.h2}>Place holder message will be placed here and blah blah</Typography>
-                  <Typography variant = 'body1' className= {classes.p}>Smaller message that is longer than  and wee wee wee wee the above wahala...</Typography>
+                  <Typography variant = 'h2' className={classes.h2}>Transforming businesses with innovative software solutions.</Typography>
+                  <Typography variant = 'body1' className= {classes.p}>At IT Central, we are passionate about software development and training the next generation of tech leaders. We specialize in building innovative software solutions and comprehensive training programs for businesses and developers.</Typography>
+                  <Typography variant = 'body1' className= {classes.p}>Our team of experienced developers and trainers work together to provide end-to-end services for web and mobile applications, and create beautiful and intuitive interfaces that help our clients engage their users and drive conversions.</Typography>
 
                 </Grid>
               </Grid>
               <Grid item md = {6}>
+                <img src="Images\IMG_20230111_161938.jpg" alt="" style={{objectFit: 'contain', height: '50vh', width: '50vw'}}/>
               </Grid>
             </Grid>
 
         </Container>
       </main>
-      <section className={classes.ourStory}>
+      <section className={classes.ourStory}  data-aos="fade-up"
+                    data-aos-duration="3000">
         <Container>
             <Grid container xs = {12}>
               <Grid item xs = {12} md = {6}>
                 <Grid item md = {11}>
                   <div style={{display:'flex'}}>
                     <div className={classes.leftborder}></div>
-                    <Typography variant='h3' className={classes.h3}> Our Story</Typography>
+                    <Typography variant='h3' className={classes.h3}>How we work</Typography>
                   </div>
                   <Typography variant='body1' className={classes.p}>
-                    Lorem ipsum is a something i just plan on putting here until content arrives and we are happy with it. Since 2020, we have been doing something amazing. so let’s continue
+                    At our IT central, we believe in the power of collaboration and strive to create an environment where diverse ideas and perspectives come together to drive innovative solutions
                   </Typography>
-                    <Typography variant='body1' className={classes.p}>
-                      With Extra message maybe on our training information could go here. Number of certified graduates, number of trainers and stuff                  
-                    </Typography>
+                  <Typography variant='body1' className={classes.p}>
+                    Our dedicated team is committed to staying ahead of the curve and delivering cutting-edge technology that makes a tangible impact on the world.                    
+                  </Typography>
+                  <Typography variant='body1' className={classes.p}>
+                    We are constantly pushing the boundaries and never settling for the status quo, because we know that true progress is only possible through relentless hard work and a passion for what we do
+                  </Typography>
                 </Grid>
               </Grid>
               <Grid item md = {6}>
-                  <Card radiu style={{backgroundColor: 'rgba(217, 217, 217, 1)', height: '50vh', borderRadius: '2.5rem'}}elevation = {0}/>
+                  <Card radiu style={{backgroundColor: 'rgba(217, 217, 217, 1)', height: '50vh', borderRadius: '2.5rem'}}elevation = {0}>
+                    <img src="Images\IMG_20230111_162120.jpg" alt="" style={{objectFit: '50%',objectPosition: 'top', width: '100%'}} />
+                    {/* <img src="Images\IMG_20230111_161938.jpg" alt="" style={{objectFit: 'contain', height: '50vh', width: '50vw'}}/> */}
+
+                    </Card>
               </Grid>
             </Grid>
 
         </Container>
 
       </section>
-      <section className={classes.missionVision}>
+      <section className={classes.missionVision} data-aos="fade-up"
+                    data-aos-duration="3000">
         <Container>
             <Grid container xs = {12}>
-              <Grid item xs = {12} md = {6}>
-                <Grid item md = {11}>
+              <Grid item xs = {12} md = {6} data-aos="fade-right"
+                    data-aos-duration="3000">
+                <Grid item md = {11} >
                   <div style={{display:'flex'}}>
                     <div className={classes.leftborder}></div>
                     <Typography variant='h3' className={classes.h3}>Mission</Typography>
                   </div>
                   <Typography variant='body1' className={classes.p}>
-                  Our misson is to be like a townhall, different, from Bala Blu, Blu Lu, Bulaba so that everyone can ignite businesses. We change the way organizations develop their employees and every person at iT Central has a role to play in doing so!.                  </Typography>
+                  Our team of experienced developers and trainers work together to provide end-to-end services for web and mobile applications, and create beautiful and intuitive interfaces that help our clients engage their users and drive conversions.
+                  </Typography>
+                  <Typography variant='body1' className={classes.p}>
+                  We strive to build globally recognized software solutions and train the next generation of tech leaders who will shape the future of technology.
+                  </Typography>
                 </Grid>
               </Grid>
-              <Grid item xs = {12} md = {6}>
+              <Grid item xs = {12} md = {6} data-aos="fade-left"
+                    data-aos-duration="3000">
                 <Grid item md = {11}>
                   <div style={{display:'flex'}}>
                     <div className={classes.leftborder}></div>
                     <Typography variant='h3' className={classes.h3}>Vision</Typography>
                   </div>
                   <Typography variant='body1' className={classes.p}>
-                    As a something in a downhall that just so happens to be different from Bala Blu, Blu Lu, Bulaba, iT Central responds to the needs of emerging founders. By offering Power and Skills, a combination of soft and hard skills, we are able to help grow companies in which the demand for reskilling and upskilling continues to increase.
+                    Our vision is to be the leading software development and training company in the Northern region of Nigeria, recognized for creating cutting-edge software solutions and training programs that empower businesses and individuals to achieve their goals.
+                  </Typography>  
+                  <Typography variant='body1' className={classes.p}>
+                    Through our efforts, we aim to put Northern Nigeria on the map as a hub for innovative software development and tech talent.
                   </Typography>  
                 </Grid>
               </Grid>
@@ -149,35 +176,40 @@ function AboutPage() {
 
             </Grid>
             <Grid item md ={4}>
-              <Card elevation={0} className={classes.valueCard}>
+              <Card elevation={0} className={classes.valueCard} data-aos="fade-left"
+                    data-aos-duration="3000">
                 <div className={classes.imageBox}></div>
                 <Typography variant='h4' className={classes.h4}> Core Value 1</Typography>
                 <Typography variant='p' className={classes.p}>We believe that this first core value means something to us, and to you. We are weee!</Typography>
               </Card>         
             </Grid>
             <Grid item md = {4}>
-              <Card elevation={0} className={classes.valueCard}>
+              <Card elevation={0} className={classes.valueCard} data-aos="fade-left"
+                    data-aos-duration="2500">
                 <div className={classes.imageBox}></div>
                 <Typography variant='h4' className={classes.h4}> Core Value 1</Typography>
                 <Typography variant='p' className={classes.p}>We believe that this first core value means something to us, and to you. We are weee!</Typography>
               </Card>
             </Grid>
             <Grid item md = {4}>
-              <Card elevation={0} className={classes.valueCard}>
+              <Card elevation={0} className={classes.valueCard} data-aos="fade-left"
+                    data-aos-duration="2000">
                 <div className={classes.imageBox}></div>
                 <Typography variant='h4' className={classes.h4}> Core Value 1</Typography>
                 <Typography variant='p' className={classes.p}>We believe that this first core value means something to us, and to you. We are weee!</Typography>
               </Card>
             </Grid>
             <Grid item md = {4}>
-              <Card elevation={0} className={classes.valueCard}>
+              <Card elevation={0} className={classes.valueCard} data-aos="fade-left"
+                    data-aos-duration="1500">
                 <div className={classes.imageBox}></div>
                 <Typography variant='h4' className={classes.h4}> Core Value 1</Typography>
                 <Typography variant='p' className={classes.p}>We believe that this first core value means something to us, and to you. We are weee!</Typography>
               </Card>
             </Grid>
             <Grid item md = {4}>
-              <Card elevation={0} className={classes.valueCard}>
+              <Card elevation={0} className={classes.valueCard} data-aos="fade-left"
+                    data-aos-duration="1000">
                 <div className={classes.imageBox}></div>
                 <Typography variant='h4' className={classes.h4}> Core Value 1</Typography>
                 <Typography variant='p' className={classes.p}>We believe that this first core value means something to us, and to you. We are weee!</Typography>
@@ -187,9 +219,10 @@ function AboutPage() {
         </Container>
 
       </section>
+      AOS.init();
 
     </body>
   )
-}
+} 
 
 export default AboutPage

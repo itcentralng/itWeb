@@ -29,7 +29,7 @@
 #workedFor{
     display: flex;
     justify-content: center;
-    height: 12vh;
+    height: 12rem;
     background-color: #012A47;
     width: 100%;
 }
@@ -51,7 +51,7 @@
     transform: translate3d(0, 0, 0);
     background: white;
     width: 80vw;
-    height: 10vh;
+    height: 10rem;
     /* z-index: 0; */
 
 }
@@ -75,7 +75,7 @@
     font-size: 1.8rem;
     font-weight: 400;
 }
-@media only screen and (max-width: 430px){
+@media only screen and (min-width: 0) and (max-width:768px){
     #startup{
         height: auto;
         display: flex;
@@ -97,19 +97,21 @@
     #startup .card{
         margin-bottom: 5rem;
         width: 90%;
+        margin-right: 0;
     }
     #workedFor{
         display: flex;
         justify-content: center;
-        height: 7vh;
+        height: 7rem;
         background-color: #012A47;
         width: 100%;
     }
+
     .slick-slider .slick-list {
         transform: translate3d(0, 0, 0);
         background: white;
         width: 90vw;
-        height: 5vh;
+        height: 5rem;
         /* z-index: 0; */
     
     }
@@ -124,16 +126,15 @@
   
 
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) { 
-    #workedFor{
-        height: 10vh;
+@media only screen and (min-width: 700px) and (max-width: 1023px) {     #workedFor{
+        height: 10rem;
     }
     #workedFor h4{
         display: none;
     }
     .slick-slider .slick-list {
         width: 90vw;
-        height: 7vh;
+        height: 7rem;
     }
     .slick-track{
         height: 100%;

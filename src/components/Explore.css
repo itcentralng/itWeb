@@ -50,7 +50,8 @@
 }
 
 #Explore .container{
-width:80vw;    padding-top: 2rem;
+    width:80vw;    
+    padding-top: 2rem;
     display: flex;
     /* justify-content: flex-end; */
     flex-wrap: wrap;
@@ -66,12 +67,14 @@ width:80vw;    padding-top: 2rem;
     /* margin: 50px 0px; */
     white-space:nowrap;
     overflow-x: scroll;
-    height: 45vh;
+    height: 45rem;
     
 }
 #Explore .card{
-    flex: 0 0 20%;
+    flex: 0 0 30%;
     white-space: normal;
+    height: 27rem;
+
 }
 /* width */
 ::-webkit-scrollbar {
@@ -82,7 +85,7 @@ width:80vw;    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35rem;
+    height: 30rem;
     padding-bottom:2rem ;
 }
 .specialization h2{
@@ -100,18 +103,23 @@ width:80vw;    padding-top: 2rem;
 .banner img{
     width: 100%;
 } */
-@media only screen and (max-width: 430px){
+@media only screen and (min-width: 0) and (max-width:768px){
     #Explore h2{
         font-size: 2.2rem;
         margin:auto;
     }
     #Explore .cards{
-        height: 50rem;
+        height: 45rem;
     
     }
     #Explore .card{
         flex: 0 0 70%;
+        height: 27rem;
         white-space: normal;
+
+    }
+    #right,#left{
+        top: 30%;
     }
     .specialization{
         display: flex;
@@ -125,8 +133,7 @@ width:80vw;    padding-top: 2rem;
     
     
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) { 
-    #Explore .card{
+@media only screen and (min-width: 768px) and (max-width: 1024px) {     #Explore .card{
         flex: 0 0 50%;
         white-space: normal;
     }

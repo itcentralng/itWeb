@@ -25,11 +25,11 @@ function Startup() {
 
     // button = {<div className="trialButton"><p>View Website</p></div>}
     let startups = startupData.map(function(startup){
-        return <Card  title = {startup.name} info ={startup.info}  button = {<div className = 'startup-btn'><Link to = ''>Visit Website</Link></div>}falseImage ={`/Images/${startup.icon}`} trueImage ={`/Images/${startup.whiteIcon}`} imageWidth = '100vw' height = '30rem' border = '1px solid #0070C0'/>
+        return <Card key = {startup.name} title = {startup.name} info ={startup.info}  button = {<div className = 'startup-btn'><Link to = ''>Visit Website</Link></div>}falseImage ={`/Images/${startup.icon}`} trueImage ={`/Images/${startup.whiteIcon}`} imageWidth = '100vw' height = '30rem' border = '1px solid #0070C0'/>
     })
     let companiesAll = companies.map(function(company){
         return(
-                    <div style = {{display:"flex", alignItems:"center"}}>
+                    <div key = {company.name}style = {{display:"flex", alignItems:"center"}}>
                         <img src={company.Image} width = "100%" height = "90%" style = {{paddingTop: "0.4rem",objectFit: "contain", objectPosition:"center" }}alt="" />
                     </div>
         )

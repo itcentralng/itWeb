@@ -8,27 +8,36 @@ const CustomSelect = withStyles({
       fontSize: "30px",
     },
   })(Select);
-const useStyles = makeStyles({
-    contactus:{
-        height: '90rem',
-        background: "#0070C00D",
-        display: 'flex',
-        alignItems: 'center',
-        // paddingTop:'9rem'
-    },
-    form:{
-        fontSize: '1.4rem',
-        marginBottom: '1em',
-        fontWeight:600,
-        color:"black"
-    },
-    button:{
-        margin: "30px 8px"
 
-    },
-    container:{
-        width: '80vw',
-        margin: 'auto'
+
+const useStyles = makeStyles((theme) =>{
+    return{
+        contactus:{
+            height: '90rem',
+            background: "#0070C00D",
+            display: 'flex',
+            alignItems: 'center',
+            [theme.breakpoints.down('sm')]:{
+                padding: '10rem 0'
+            }
+            // paddingTop:'9rem'
+        },
+        form:{
+            fontSize: '1.4rem',
+            marginBottom: '1em',
+            fontWeight:600,
+            color:"black"
+        },
+        button:{
+            margin: "30px 8px"
+    
+        },
+        container:{
+            width: '80vw',
+            margin: 'auto'
+        }
+    
+
     }
 })
 

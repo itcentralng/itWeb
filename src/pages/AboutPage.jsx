@@ -5,69 +5,81 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 
-const useStyles =makeStyles({
-  main: {
-    height: '70vh',
-    backgroundColor:'rgba(0, 112, 192, 0.05)',
-    marginBottom: '2rem',
-    display:'flex',
-    alignItems: 'center'
-  },
-  h2:{
-    fontSize:'3.6rem',
-    fontWeight: 400,
-    marginBottom:'2rem'
-  },
-  h3:{
-    fontSize:'2.9rem',
-    fontWeight: 600,
-    marginBottom:'2rem',
-    color: 'black'
-  },
-  h4:{
-    fontSize:'2rem',
-    fontWeight: '700'
-  },
-  p:{
-    fontSize: '1.8rem',
-    margin: '2.5rem 0rem'
-  },
-  ourStory:{
-    margin: '15rem 0rem',
+const useStyles = makeStyles((theme)=>{
+  return{
+    main: {
+      height: 'auto',
+      backgroundColor:'rgba(0, 112, 192, 0.05)',
+      marginBottom: '2rem',
+      display:'flex',
+      alignItems: 'center',
+      padding: '10rem 0'
+
+    },
+    h2:{
+      fontSize:'3.6rem',
+      fontWeight: 400,
+      marginBottom:'2rem'
+    },
+    h3:{
+      fontSize:'2.9rem',
+      fontWeight: 600,
+      marginBottom:'2rem',
+      color: 'black'
+    },
+    h4:{
+      fontSize:'2rem',
+      fontWeight: '700'
+    },
+    p:{
+      fontSize: '1.8rem',
+      margin: '2.5rem 0rem'
+    },
+    image:{
+      [theme.breakpoints.down('sm')]:{
+        width: '100% !important',
+        height: '100% !important'
+
+      }
+    },
+    ourStory:{
+      margin: '15rem 0rem',
+    
+    },
+
+    leftborder:{
+      width:'.5rem',
+      height: '3.2rem',
+      marginRight:'.7rem',
+      backgroundColor:'rgba(0, 112, 192, 1)'
+    },
+    missionVision:{
+      marginTop: '4rem'
+    },
+    coreValues:{
+      backgroundColor:'rgba(0, 112, 192, 0.05)',
+      height: 'auto',
+      padding:'5rem 0rem'
+    },
+    valueCard:{
+      height: '50vh', 
+      padding: '0 3rem',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      textAlign: 'center'
+    },
+    imageBox:{
+      height:'8rem',
+      width: '8rem',
+      backgroundColor: 'rgba(0, 112, 192, 1)',
+      marginBottom: '2.5rem'
+    }
   
-  },
-  leftborder:{
-    width:'.5rem',
-    height: '3.2rem',
-    marginRight:'.7rem',
-    backgroundColor:'rgba(0, 112, 192, 1)'
-  },
-  missionVision:{
-    marginTop: '4rem'
-  },
-  coreValues:{
-    backgroundColor:'rgba(0, 112, 192, 0.05)',
-    height: 'auto',
-    padding:'5rem 0rem'
-  },
-  valueCard:{
-    height: '50vh', 
-    padding: '0 3rem',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    textAlign: 'center'
-  },
-  imageBox:{
-    height:'8rem',
-    width: '8rem',
-    backgroundColor: 'rgba(0, 112, 192, 1)',
-    marginBottom: '2.5rem'
-  }
+}
 
 })
-
 function AboutPage() {
   useEffect(() => {
     Aos.init()
@@ -88,7 +100,7 @@ function AboutPage() {
                 </Grid>
               </Grid>
               <Grid item md = {6}>
-                <img src="Images\IMG_20230111_161938.jpg" alt="" style={{objectFit: 'contain', height: '50vh', width: '50vw'}}/>
+                <img src="Images\IMG_20230111_161938.jpg" alt=""  className={classes.image} style={{objectFit: 'contain', height: '50vh', width: '50vw'}}/>
               </Grid>
             </Grid>
 

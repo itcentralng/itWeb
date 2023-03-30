@@ -88,6 +88,7 @@ document.addEventListener('click', (event) =>{
                   <li className='nav--item'><Link to="/about">About Us</Link></li>
                   <li className='nav--item'><Link className='scroll--link' to="" smooth={true} offset={-50} duration={500}>Service</Link></li>
                   <li className='nav--item'><Link to="">Academy</Link></li>
+                  <li className='nav--item'><Link  to="/presentations" smooth={true} offset={-50} duration={500}>Presentations</Link></li>
                   <li className='nav--item'><Link  to="/contactus" smooth={true} offset={-50} duration={500}>Contact</Link></li>
               </ul>
           </div>

@@ -80,8 +80,9 @@ function Explore() {
           <h2>Our Area of Expertise</h2>
           <p>IT Central specializes in providing software development services, including web and mobile development, UI/UX design, and training programs that help businesses and developers achieve their goals. Our team of experts have a wealth of experience in a variety of technologies and programming languages, and we have served a range of clients including Julius Berger Nigeria, Nigerian Airforce and Schoola</p>
         </div>
-
-      </div>
+      {/* <div className="advert">
+      </div> */}
+    </div>
     </div>
   )
 }

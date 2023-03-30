@@ -75,7 +75,7 @@ document.addEventListener('click', (event) =>{
     <div className="navbar" style={{boxShadow}}>
       <div className="container">
           <div className="logo">
-              <h3>iT Central</h3>
+              <h3><Link to={"/"}>iT Central</Link></h3>
           </div>
           <div className="hamburger" onClick = {handleClick} >
             <img src={hamburgerState? '/Images/cancel.svg' : '/Images/hamburger.svg'}  alt=""/>

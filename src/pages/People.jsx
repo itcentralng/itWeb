@@ -21,9 +21,9 @@ const useStyles = makeStyles((theme)=>{
             
         },
         presentationCover:{
-            width:'100%',
-            objectFit: 'contain',
-            borderRadius: 30,
+            width:'80%',
+            objectFit: 'fill',
+            borderRadius: 100,
             '&:hover':{
                 opacity: 1
             }
@@ -34,37 +34,37 @@ const useStyles = makeStyles((theme)=>{
             bottom: 20,
             left:20,
             color: theme.palette.primary.main,
+        },
+        personName:{
+            fontSize:'3.6rem',
+            fontWeight: 400,
+            marginBottom:'2rem'
         }
     }
 
 })
-const presentations = [
+const people = [
     {
-    Title: 'Zero To Rest By IT CENTRAL',
-    Cover: 'Images/RestAPI-Presentation.png',
-    Link: 'Docs/RestAPI_Presentation.pdf',
-    Location: "Colab Innovation City"
+    name: 'Nasiru Mustapha',
+    image: 'https://dhfspace.fra1.digitaloceanspaces.com/dhfspace/nasirphoto.JPG',
+    id: 'nasirumustapha',
+    link: '/people/nasirumustapha',
     }]
-function Presentations() {
+function People() {
     const classes = useStyles()
   return (
     <div className={classes.body}>
       <Container>
         <Grid container spacing={3}>
-            {presentations.map((presentation)=>{
+            {people.map((person)=>{
                 return(
                     
-                    <Grid item md = {4} className = {classes.gridItem} key = {presentation.Title}>
-                            <img className={classes.presentationCover} src={presentation.Cover} alt={presentation.Title} />
-                            <a href={presentation.Link}>
-                            <IconButton className={classes.downloadBtn}>
-                                <CloudDownload style={{fontSize: '2rem', marginRight: '1rem'}}/>
-                                <span>Download</span>
-                            </IconButton >
-
-                            </a>
+                    <a href={person.link}>
+                    <Grid item md = {4} className = {classes.gridItem} key = {person.name}>
+                            <img className={classes.presentationCover} src={person.image} alt={person.name} />
 
                     </Grid>
+                    </a>
                 )
 
             })}
@@ -74,4 +74,4 @@ function Presentations() {
   )
 }
 
-export default Presentations
+export default People

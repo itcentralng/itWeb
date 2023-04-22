@@ -9,6 +9,8 @@ import AboutPage from './pages/AboutPage'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import PopUp from './components/PopUp';
 import Presentations from './pages/Presentations';
+import People from './pages/People';
+import Person from './pages/Person';
 
 
 
@@ -41,6 +43,8 @@ function App() {
                   <Route exact path="/contactus" element={<ContactUs/>} />
                   <Route exact path="/about" element={<AboutPage/>} />
                   <Route exact path="/presentations" element={<Presentations/>} />
+                  <Route exact path="/people" element={<People/>} />
+                  <Route exact path="/people/:id" element={<Person/>} />
                   
                 </Routes>
           </div>

@@ -18,9 +18,14 @@ function Footer() {
           </ul>
         </div>
         <div className="customer--care">
-          <h4>Customer Services</h4>
+          <h4>Links</h4>
           <ul>
+            <a href='/about' style={{textDecoration:"none"}}>
             <li>About Us</li>
+            </a>
+            <a href='/people' style={{textDecoration:"none"}}>
+            <li>People</li>
+            </a>
             <li>Courses</li>
             <li>Privacy Policy</li>
           </ul>

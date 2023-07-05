@@ -26,6 +26,9 @@ function Footer() {
             <a href='/people' style={{textDecoration:"none"}}>
             <li>People</li>
             </a>
+            <a href='/summer' style={{textDecoration:"none"}}>
+            <li>Summer Camp</li>
+            </a>
             <li>Courses</li>
             <li>Privacy Policy</li>
           </ul>

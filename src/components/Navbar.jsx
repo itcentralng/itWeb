@@ -1,104 +1,135 @@
-import React, { useState, useEffect }from 'react'
-import '../components/Navbar.css'
-import { Link } from 'react-router-dom'
-import { Link as ScrollLink } from 'react-scroll'
-import { Router } from 'react-router-dom'
-import { Twirl as Hamburger } from 'hamburger-react'
+import React, { useState, useEffect } from "react";
+import "../components/Navbar.css";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Router } from "react-router-dom";
+import { Twirl as Hamburger } from "hamburger-react";
 function Navbar() {
-
-  
-  
-  const [hamburgerState, setHamburgerState] = useState(false)
+  const [hamburgerState, setHamburgerState] = useState(false);
   function handleClick(event) {
     event.stopPropagation();
-    let lists = document.querySelector('ul');
+    let lists = document.querySelector("ul");
     let computedStyle = window.getComputedStyle(lists);
-    let height = computedStyle.getPropertyValue('height');
-    let navItems = document.querySelector('#nav--items');
-    setHamburgerState(!hamburgerState)
+    let height = computedStyle.getPropertyValue("height");
+    let navItems = document.querySelector("#nav--items");
+    setHamburgerState(!hamburgerState);
     if (height === "0px") {
-      navItems.style.height = '70rem';
+      navItems.style.height = "70rem";
       lists.style.height = "70rem";
     } else {
       lists.style.height = "0px";
-      navItems.style.height = '0';
+      navItems.style.height = "0";
     }
-}
-
-
-document.addEventListener('click', (event) => {
-  let target = event.target;
-  let navItems = document.querySelector('#nav--items');
-  let lists = document.querySelector('ul');
-  let navItemsHeight = window.getComputedStyle(navItems).height;
-  
-  if (!navItems.contains(target) && navItemsHeight > '0px' ) {
-    navItems.style.height = '0';
-    lists.style.height = "0px";
-    setHamburgerState(!hamburgerState)
-  } else if (target.matches('#nav--items') || target.matches('.hamburger img')){
-    setHamburgerState(!hamburgerState)
-  } else {
-    setHamburgerState(false)
   }
-});
 
+  document.addEventListener("click", (event) => {
+    let target = event.target;
+    let navItems = document.querySelector("#nav--items");
+    let lists = document.querySelector("ul");
+    let navItemsHeight = window.getComputedStyle(navItems).height;
 
-document.addEventListener('click', (event) =>{
-  let target = event.target;
-  let links = document.querySelector('a');
-  let navItems = document.querySelector('#nav--items');
-  let lists = document.querySelector('ul');
-  if(!target.matches('.nav--item')){
-    navItems.style.height = '0';
-    lists.style.height = "0px";
+    if (!navItems.contains(target) && navItemsHeight > "0px") {
+      navItems.style.height = "0";
+      lists.style.height = "0px";
+      setHamburgerState(!hamburgerState);
+    } else if (
+      target.matches("#nav--items") ||
+      target.matches(".hamburger img")
+    ) {
+      setHamburgerState(!hamburgerState);
+    } else {
+      setHamburgerState(false);
+    }
+  });
 
-  }else{
-  }
-})
-    const [isOpen, setOpen] = useState(false)
+  document.addEventListener("click", (event) => {
+    let target = event.target;
+    let links = document.querySelector("a");
+    let navItems = document.querySelector("#nav--items");
+    let lists = document.querySelector("ul");
+    if (!target.matches(".nav--item")) {
+      navItems.style.height = "0";
+      lists.style.height = "0px";
+    } else {
+    }
+  });
+  const [isOpen, setOpen] = useState(false);
 
-    const [boxShadow, setBoxShadow] = useState('blue')
+  const [boxShadow, setBoxShadow] = useState("blue");
 
-    useEffect(() => {
-        function handleScroll() {
-          setBoxShadow(window.pageYOffset > 0 ? '0 0 1em 0 rgb(131 135 137 / 25%)' : 'none');
-        }
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
+  useEffect(() => {
+    function handleScroll() {
+      setBoxShadow(
+        window.pageYOffset > 0 ? "0 0 1em 0 rgb(131 135 137 / 25%)" : "none"
+      );
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="navbar" style={{boxShadow}}>
+    <div className="navbar" style={{ boxShadow }}>
       <div className="container">
-          <div className="logo">
-              <h3><Link to={"/"}>iT Central</Link></h3>
-          </div>
-          <div className="hamburger" onClick = {handleClick} >
-            <img src={hamburgerState? '/Images/cancel.svg' : '/Images/hamburger.svg'}  alt=""/>
+        <div className="logo">
+          <h3>
+            <Link to={"/"}>iT Central</Link>
+          </h3>
+        </div>
+        <div className="hamburger" onClick={handleClick}>
+          <img
+            src={
+              hamburgerState ? "/Images/cancel.svg" : "/Images/hamburger.svg"
+            }
+            alt=""
+          />
+        </div>
 
-          </div>
-
-          <div id="nav--items">
-              <ul>
-                  <li className='nav--item'><Link to="/" smooth={true} offset={-50} duration={500}>Home</Link></li>
-                  <li className='nav--item'><Link to="/about">About Us</Link></li>
-                  <li className='nav--item'><Link className='scroll--link' to="" smooth={true} offset={-50} duration={500}>Service</Link></li>
-                  <li className='nav--item'><Link to="">Academy</Link></li>
-                  <li className='nav--item'><Link  to="/presentations" smooth={true} offset={-50} duration={500}>Presentations</Link></li>
-                  <li className='nav--item'><Link  to="/contactus" smooth={true} offset={-50} duration={500}>Contact</Link></li>
-              </ul>
-          </div>
+        <div id="nav--items">
+          <ul>
+            <li className="nav--item">
+              <Link to="/" smooth={true} offset={-50} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="nav--item">
+              <Link to="/about">About Us</Link>
+            </li>
+            <li className="nav--item">
+              <Link
+                className="scroll--link"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Services
+              </Link>
+            </li>
+            <li className="nav--item">
+              <Link to="">Academy</Link>
+            </li>
+            <li className="nav--item">
+              <Link
+                to="/presentations"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Presentations
+              </Link>
+            </li>
+            <li className="nav--item">
+              <Link to="/contactus" smooth={true} offset={-50} duration={500}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
-
-
- )
+  );
 }
 
-
-export default Navbar
+export default Navbar;

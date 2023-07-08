@@ -69,18 +69,13 @@ function SummerSection() {
               color="primary"
               style={{ fontWeight: "500" }}
             >
-              2023 Summer Bootcamp
+              2023 Teen Code Camp
             </Typography>
             <Typography variant="h1" className={classes.h1}>
               SUMMER BOOTCAMP
             </Typography>
             <Typography variant="p" className={classes.p}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
-              impedit porro culpa nulla magnam quo alias praesentium, soluta at
-              facilis totam voluptatibus similique. Esse qui itaque, veritatis
-              soluta non aliquam! Unde quae quidem molestiae quo, placeat totam
-              esse dolorem beatae eaque tempore quod aperiam est odio deleniti
-              et natus omnis!
+            Are you ready to ignite your child's passion for technology? Look no further than our exhilarating code camp! We invite you to join us this August for an unforgettable experience where your child will delve into the fascinating world of coding. Our program offers three exciting courses: Python, Web Design, and UX/UI. Each course is designed to empower students with valuable skills and knowledge while nurturing their creativity and problem-solving abilities. Don't miss this opportunity to discover the wonders of tech with us!
             </Typography>
             <Button
               variant="contained"
@@ -138,7 +133,7 @@ function SummerSection() {
               }}
               elevation={0}
             >
-              {/* <img src="Images\IMG_20230111_161938.jpg" alt="" style={{objectFit: 'contain', height: '50vh', width: '50vw'}}/> */}
+              <img src="Images/summer-flyer.jpg" alt="" style={{objectFit: 'fill', height: '55vh', width: '35vw'}}/>
             </Card>
           </Grid>
         </Grid>

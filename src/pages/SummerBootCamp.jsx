@@ -66,7 +66,7 @@ function SummerBootCamp() {
       <div className={classes.container}>
         <div className={classes.heading}>
           <div>
-            <Typography variant="h1">2023 Summer BootCamp</Typography>
+            <Typography variant="h1">2023 Teen Code Camp</Typography>
             <Typography
               variant="h6"
               color="primary"
@@ -95,53 +95,19 @@ function SummerBootCamp() {
           </Button>
         </div>
         <div className={classes.details}>
+        <h1>Python</h1>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            commodi nam consequuntur distinctio debitis obcaecati autem harum
-            quos quo dignissimos, quaerat nemo et. Nesciunt, est modi recusandae
-            suscipit assumenda qui laboriosam quidem amet quam, maiores esse.
-            Sed, aspernatur obcaecati? Aliquam, magni earum voluptatem aperiam
-            aut impedit ea deleniti perferendis nobis. Ex mollitia atque
-            pariatur fuga quaerat voluptate officia cupiditate velit! Eum beatae
-            vel ipsa repudiandae hic ducimus labore explicabo impedit, pariatur
-            excepturi veritatis aliquam distinctio iure modi mollitia quibusdam
-            natus quasi? Quia assumenda nobis neque? Soluta, perferendis
-            cupiditate quaerat rem veniam ullam magnam fuga quas enim earum.
-            Saepe, natus magnam?
-          </Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-            voluptatum placeat sed vitae. Eos, ducimus? Officiis nihil dolore
-            enim minus laboriosam harum tempore maiores itaque expedita est.
-            Debitis, vero adipisci. Sunt velit itaque consequuntur nesciunt sint
-            obcaecati cupiditate hic provident nam laborum? Alias corporis illum
-            fugit delectus accusamus maxime reiciendis harum nulla, dignissimos
-            unde deleniti quibusdam architecto voluptates libero dicta! Porro,
-            sint. Mollitia, exercitationem! Veritatis minima voluptatem
-            praesentium animi nisi exercitationem, ex doloribus sit porro
-            dignissimos omnis facilis harum et minus similique. Obcaecati vitae
-            perferendis omnis excepturi a optio. Nemo. Recusandae perferendis
-            nihil temporibus, deserunt provident voluptatibus commodi esse magni
-            alias facilis facere et dignissimos quae exercitationem numquam
-            consectetur aliquid laudantium? Ducimus, est temporibus. Magni id
-            nam rem accusantium modi! Omnis iusto accusamus at quae. Eligendi
-            fugit consequuntur earum neque vel commodi alias optio numquam
-            laboriosam magni sapiente necessitatibus fuga animi velit ipsum
-            tenetur, ut tempora provident veniam vero facere.
+          In our Python course, students will embark on a thrilling journey through the realm of programming. Python, known for its simplicity and versatility, is the perfect language for beginners. During this course, students will learn the fundamentals of coding, such as variables, loops, and functions. They will also explore advanced topics like object-oriented programming and data manipulation. With Python, students will be equipped to build their own projects, whether it's a game, a web application, or a data analysis tool. By the end of the course, your child will have gained a solid foundation in programming and be well-prepared for future coding adventures.
           </Typography>
 
+        <h1>Web</h1>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-            praesentium eos sequi fugit enim molestias, nulla odio ab corrupti
-            quia veritatis maxime repellat perferendis neque expedita qui
-            architecto ut? Accusantium! Repellendus quod eum quos voluptas hic
-            soluta provident perferendis quis officiis esse dicta error eveniet
-            maiores labore beatae possimus ex exercitationem, impedit nesciunt
-            nostrum explicabo et! Autem quam voluptates ipsam. At culpa sunt
-            quaerat dolorem quibusdam rerum assumenda debitis? Perspiciatis
-            laudantium facere dolorem accusamus dolor accusantium quidem quasi
-            molestiae. Eius accusantium laboriosam labore ullam impedit, quaerat
-            veniam placeat sed iure.
+          For those with a keen eye for aesthetics and a passion for the web, our Web Design course is the ideal choice. In this course, students will dive into the captivating world of web development and learn how to create visually stunning and functional websites. They will explore the principles of design, including color theory, typography, and layout, and master essential web technologies like HTML, CSS, and JavaScript. Through hands-on projects, students will unleash their creativity to craft their own websites, incorporating interactive elements and responsive design. By the end of the course, your child will have the skills to bring their digital visions to life and make a lasting impact in the online world.
+          </Typography>
+          
+        <h1>UI/UX</h1>
+          <Typography variant="body1">
+          If your child is fascinated by user experiences and wants to design products that captivate and delight users, our UX/UI course is the perfect fit. This course will introduce students to the exciting field of user experience and user interface design. They will learn how to conduct user research, create wireframes and prototypes, and apply usability principles to ensure optimal user interactions. Through a combination of theory and practice, students will gain insights into user-centered design and develop a critical eye for crafting intuitive and engaging digital experiences. By the end of the course, your child will be equipped with the skills to design seamless user experiences that leave a lasting impression.
           </Typography>
         </div>
       </div>

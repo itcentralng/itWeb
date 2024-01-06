@@ -12,6 +12,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+Aos.init()
+
 const useStyles = makeStyles((theme) => {
   return {
     main: {
@@ -361,7 +363,6 @@ function AboutPage() {
           </Grid>
         </Container>
       </section>
-      AOS.init();
     </body>
   );
 }

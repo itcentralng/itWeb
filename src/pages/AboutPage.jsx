@@ -92,13 +92,13 @@ function AboutPage() {
   const classes = useStyles();
   return (
     <body style={{ marginTop: "10rem" }}>
-      <main className={classes.main}>
+      {/* <main className={classes.main}>
         <Container>
           <Grid container xs={12}>
             <Grid item xs={12} md={6}>
               <Grid item md={12}>
                 <Typography variant="h2" className={classes.h2}>
-                  Building the next generation.
+                  Who we are
                 </Typography>
                 <Typography variant="body1" className={classes.p}>
                 Our core mission at iT Central is nurturing and empowering the next generation of tech talents from Northern Nigeria.
@@ -127,7 +127,7 @@ function AboutPage() {
             </Grid>
           </Grid>
         </Container>
-      </main>
+      </main> */}
       <section
         className={classes.ourStory}
         data-aos="fade-up"
@@ -140,24 +140,23 @@ function AboutPage() {
                 <div style={{ display: "flex" }}>
                   <div className={classes.leftborder}></div>
                   <Typography variant="h3" className={classes.h3}>
-                    How we work
+                    Who we are
                   </Typography>
                 </div>
                 <Typography variant="body1" className={classes.p}>
-                  At our IT central, we believe in the power of collaboration
-                  and strive to create an environment where diverse ideas and
-                  perspectives come together to drive innovative solutions
+                Our core mission at iT Central is nurturing and empowering the next generation of tech talents from Northern Nigeria.
                 </Typography>
                 <Typography variant="body1" className={classes.p}>
-                  Our dedicated team is committed to staying ahead of the curve
-                  and delivering cutting-edge technology that makes a tangible
-                  impact on the world.
+                Through structured programs and mentorship, we cultivate diverse skill sets in aspiring developers, UI/UX designers, and engineers.
                 </Typography>
                 <Typography variant="body1" className={classes.p}>
-                  We are constantly pushing the boundaries and never settling
-                  for the status quo, because we know that true progress is only
-                  possible through relentless hard work and a passion for what
-                  we do
+                Our approach involves hands-on training, fostering a culture of continuous learning, and providing invaluable experiences within a supportive community.
+                </Typography>
+                <Typography variant="body1" className={classes.p}>
+                We are a thriving hub for fostering innovative startups. We offer a platform where visionary entrepreneurs like yourself can transform groundbreaking ideas into viable businesses.
+                </Typography>
+                <Typography variant="body1" className={classes.p}>
+                Leveraging our network, resources, and strategic guidance, we facilitate the development, growth, and sustainability of tech-driven ventures, contributing to the evolution of Northern Nigeria as a burgeoning tech hotspot on the global map.
                 </Typography>
               </Grid>
             </Grid>
@@ -171,7 +170,7 @@ function AboutPage() {
                 elevation={0}
               >
                 <img
-                  src="Images\IMG_20230111_162120.jpg"
+                  src="Images\summer.jpeg"
                   alt=""
                   style={{
                     objectFit: "50%",
@@ -207,16 +206,7 @@ function AboutPage() {
                   </Typography>
                 </div>
                 <Typography variant="body1" className={classes.p}>
-                  Our team of experienced developers and trainers work together
-                  to provide end-to-end services for web and mobile
-                  applications, and create beautiful and intuitive interfaces
-                  that help our clients engage their users and drive
-                  conversions.
-                </Typography>
-                <Typography variant="body1" className={classes.p}>
-                  We strive to build globally recognized software solutions and
-                  train the next generation of tech leaders who will shape the
-                  future of technology.
+                Empowering young men and women from Northern Nigeria to be the next generation of tech talent fueling the future of tech in Nigeria and eventually Africa.
                 </Typography>
               </Grid>
             </Grid>
@@ -235,22 +225,17 @@ function AboutPage() {
                   </Typography>
                 </div>
                 <Typography variant="body1" className={classes.p}>
-                  Our vision is to be the leading software development and
-                  training company in the Northern region of Nigeria, recognized
-                  for creating cutting-edge software solutions and training
-                  programs that empower businesses and individuals to achieve
-                  their goals.
+                  We envision a Nigeria where tech talents from the north are building solutions for the world to use and whose expertise are being employed all over the world.
                 </Typography>
-                <Typography variant="body1" className={classes.p}>
-                  Through our efforts, we aim to put Northern Nigeria on the map
-                  as a hub for innovative software development and tech talent.
-                </Typography>
+                <br></br>
+                <br></br>
+                <br></br>
               </Grid>
             </Grid>
           </Grid>
         </Container>
       </section>
-      <section className={classes.coreValues}>
+      {/* <section className={classes.coreValues}>
         <Container>
           <Grid container md={12} spacing={3}>
             <Grid item md={4}>
@@ -362,7 +347,7 @@ function AboutPage() {
             </Grid>
           </Grid>
         </Container>
-      </section>
+      </section> */}
     </body>
   );
 }

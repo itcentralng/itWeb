@@ -30,7 +30,7 @@ function Footer() {
             </li>
             <li>
               <span>
-                <img src="Images/twitter.svg" alt="" />
+                <img src="Images/x-logo.svg" alt="" />
               </span>
               @itcentralng
             </li>

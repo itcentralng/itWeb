@@ -96,20 +96,22 @@ function AboutPage() {
             <Grid item xs={12} md={6}>
               <Grid item md={12}>
                 <Typography variant="h2" className={classes.h2}>
-                  Transforming businesses with innovative software solutions.
+                  Building the next generation.
                 </Typography>
                 <Typography variant="body1" className={classes.p}>
-                  At IT Central, we are passionate about software development
-                  and training the next generation of tech leaders. We
-                  specialize in building innovative software solutions and
-                  comprehensive training programs for businesses and developers.
+                Our core mission at iT Central is nurturing and empowering the next generation of tech talents from Northern Nigeria.
                 </Typography>
                 <Typography variant="body1" className={classes.p}>
-                  Our team of experienced developers and trainers work together
-                  to provide end-to-end services for web and mobile
-                  applications, and create beautiful and intuitive interfaces
-                  that help our clients engage their users and drive
-                  conversions.
+                Through structured programs and mentorship, we cultivate diverse skill sets in aspiring developers, UI/UX designers, and engineers.
+                </Typography>
+                <Typography variant="body1" className={classes.p}>
+                Our approach involves hands-on training, fostering a culture of continuous learning, and providing invaluable experiences within a supportive community.
+                </Typography>
+                <Typography variant="body1" className={classes.p}>
+                We are a thriving hub for fostering innovative startups. We offer a platform where visionary entrepreneurs like yourself can transform groundbreaking ideas into viable businesses.
+                </Typography>
+                <Typography variant="body1" className={classes.p}>
+                Leveraging our network, resources, and strategic guidance, we facilitate the development, growth, and sustainability of tech-driven ventures, contributing to the evolution of Northern Nigeria as a burgeoning tech hotspot on the global map.
                 </Typography>
               </Grid>
             </Grid>
@@ -118,7 +120,7 @@ function AboutPage() {
                 src="Images\IMG_20230111_161938.jpg"
                 alt=""
                 className={classes.image}
-                style={{ objectFit: "contain", height: "50vh", width: "50vw" }}
+                style={{ objectFit: "contain", height: "85vh", width: "50vw" }}
               />
             </Grid>
           </Grid>

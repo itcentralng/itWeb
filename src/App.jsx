@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
 import AboutPage from "./pages/AboutPage";
+import Apply from "./pages/Apply";
 import {
   createMuiTheme,
   createTheme,
@@ -82,7 +83,8 @@ function App() {
               <Route exact path="/contactus" element={<ContactUs />} />
               <Route exact path="/about" element={<AboutPage />} />
               <Route exact path="/presentations" element={<Presentations />} />
-              <Route
+              <Route exact path="/apply" element={<Apply />} />
+              {/* <Route
                 exact
                 path="/summer"
                 element={<SummerBootCamp />}
@@ -96,7 +98,7 @@ function App() {
                 exact
                 path="/summer-confirmation"
                 element={<Confirmation />}
-              />
+              /> */}
 
               {/* <Route exact path="/people" element={<People />} />
               <Route exact path="/people/:id" element={<Person />} />

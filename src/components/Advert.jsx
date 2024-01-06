@@ -8,10 +8,10 @@ function Advert() {
       <div className="container">
         <div className="advert--writing">
           <h1>Are you a developer?</h1>
-          <p>We are looking to add to our pool of developers</p>
+          <p>Join the iT Central family today</p>
         </div>
         <div className="advert--button">
-          <Button style = 'button-white' text = 'Apply Now!'/>
+          <Button style = 'button-white' text = 'Apply Now!' link="/apply"/>
         </div>            
       </div>
 

@@ -44,7 +44,7 @@ function Startup() {
                 <div className="cards">
                     {startups}
                 </div>
-                <Button text = 'Submit idea' style = 'button-darkBlue'/>
+                <Button text = 'Submit idea' style = 'button-darkBlue' link="/apply"/>
             </div>
         </div>
         <div id="workedFor">

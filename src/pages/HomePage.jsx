@@ -17,7 +17,7 @@ function HomePage() {
       <Explore />
       <Startup />
       <Advert />
-      <SummerSection />
+      {/* <SummerSection /> */}
     </>
   );
 }

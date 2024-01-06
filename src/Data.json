@@ -1,36 +1,34 @@
 [
     {
-
-
-    "title": "Software Development",
-    "info": "We offer expert software development services for web and mobile applications",
-    "icon": {
-    "outline":"./Images/services/software.png",
-    "colored":"./Images/services/software-2.png"
-    }
+        "title": "Learn",
+        "info": "Explore Flask, Data Science, React, UI Design, & Girls Tech Bootcamp",
+        "icon": {
+            "outline": "./Images/services/learn.png",
+            "colored": "./Images/services/learn-2.png"
+        }
     },
     {
-    "title": "UI/UX Design",
-    "info": "We create beautiful and intuitive interfaces that will help you engage your users and drive conversions",
-    "icon": {
-    "outline":"./Images/services/design.png",
-    "colored":"./Images/services/design-2.png"
-    }
+        "title": "Internship",
+        "info": "Real projects & supportive learning environment for skill development",
+        "icon": {
+            "outline": "./Images/services/internship.png",
+            "colored": "./Images/services/internship-2.png"
+        }
     },
     {
-    "title": "Training Programs",
-    "info": "We provide training programs to help businesses and developers achieve their goals",
-    "icon": {
-    "outline":"./Images/services/programming-course.png",
-    "colored":"./Images/services/programming-course-2.png"
-    }
+        "title": "Developer Partnership",
+        "info": "Progress from intern to partner, engaging in tech events & mentoring",
+        "icon": {
+            "outline": "./Images/services/partnership.png",
+            "colored": "./Images/services/partnership-2.png"
+        }
     },
     {
-    "title": "Tech Consulting",
-    "info": "We offer technical consulting services to help you navigate the ever-changing landscape of technology",
-    "icon": {
-    "outline":"./Images/services/consulting.png",
-    "colored":"./Images/services/consulting-2.png"
+        "title": "Startup Incubation",
+        "info": "Guidance & support for early-stage startup ideas to reach success",
+        "icon": {
+            "outline": "./Images/services/startup.png",
+            "colored": "./Images/services/startup-2.png"
+        }
     }
-    }
-    ]
+]

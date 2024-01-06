@@ -10,9 +10,8 @@ function HeroSection() {
       <div className="container">
         <div className="hero--writings">
           <h6>IT Central Limited</h6>
-          <h2>Empowering businesses and developers</h2>
-          <p>Unlock your full potential with our software solutions and training programs. Let us help you achieve your goals.</p>
-          {/* <p>We specialise in delivering end-to-end services and mobile & web applications to innovative companies around the world.</p> */}
+          <h2>Building the next generation of tech talents</h2>
+          <p>Empowering the next generation of tech innovators in northern Nigeria by fostering startups and communities.</p>
           <Button text = "Explore" link = "Explore" style = 'button-blue' />
         </div>
         <div className="hero--image">

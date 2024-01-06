@@ -99,16 +99,14 @@ function Navbar() {
             </li>
             <li className="nav--item">
               <Link
+                to={"/apply"}
                 className="scroll--link"
                 smooth={true}
                 offset={-50}
                 duration={500}
               >
-                Services
+                Join Us
               </Link>
-            </li>
-            <li className="nav--item">
-              <Link to="">Academy</Link>
             </li>
             <li className="nav--item">
               <Link

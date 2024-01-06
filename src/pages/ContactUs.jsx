@@ -58,85 +58,15 @@ function ContactUs() {
                             Get in Touch <span><img src="/Images/wave.png" height = '50rem' width = '50rem'alt="" /></span>
                         </Typography>
                         <Typography style={{fontSize: '1.8rem'}}>
-                            Smaller message that is longer than  and wee wee wee wee the above wahala...                
+                            We are always ready to help with your queries.
                         </Typography>
                     </div>
 
                 </Grid>
                 <Grid item lg = {6}>
-                    <Grid container lg = {12} spacing = {2}>
-                        <Grid item lg = {6} xs = {12}>
-                            <form>
-                            <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>Your Name</FormLabel>
-                                    <TextField InputProps={{
-                                    style: { fontSize: '1.4rem' }
-                                    }} variant='outlined'></TextField>
-                                </FormControl>
-                            </form>
-
-                        </Grid>
-                        <Grid item lg = {6} xs = {12}>
-                            <form>
-                            <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>Your Email</FormLabel>
-                                    <TextField InputProps={{
-                                    style: { fontSize: '1.4rem' }
-                                    }} variant='outlined'></TextField>
-                                </FormControl>
-                            </form>
-
-                        </Grid>
-                        <Grid item lg = {6} xs = {12}>
-                            <form>
-                                <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>What are you interested in?</FormLabel>
-                                    <Select
-                                    labelId="demo-simple-select-helper-label"
-                                    IconComponent={ExpandMore}
-                                    id="demo-simple-select-helper"
-                                    variant='outlined'
-                                    style = {{fontSize:'1.4rem'}}
-                                    >
-                                    <MenuItem value="" style = {{fontSize:'1.4rem'}}>
-                                        <em>None</em>
-                                    </MenuItem>
-                                    <MenuItem value={10} style = {{fontSize:'1.4rem'}}>UI/UX Design</MenuItem>
-                                    <MenuItem value={20} style = {{fontSize:'1.4rem'}}>Web App Development</MenuItem>
-                                    <MenuItem value={30} style = {{fontSize:'1.4rem'}}>Mobile App Development</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </form>
-
-                        </Grid>
-                        <Grid item lg = {6} xs = {12}>
-                            <form>
-                                <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>Your Phone Number</FormLabel>
-                                    <TextField InputProps={{
-                                        style: { fontSize: '1.4rem' }
-                                        }} fullWidth variant='outlined'>
-                                    </TextField>
-                                </FormControl>
-                            </form>
-
-                        </Grid>
-                        <Grid item lg = {12}xs = {12}>
-                            <form>
-                                <FormControl fullWidth>
-                                    <FormLabel className={classes.form}>Details</FormLabel>
-                                    <TextField InputProps={{
-                                        style: { fontSize: '1.4rem' }
-                                        }} fullWidth variant='outlined' multiline rows={10}>
-                                    </TextField>
-                                </FormControl>
-                            </form>
-                        </Grid>
-                        <Button style={`button-blue ${classes.button}`} text = 'Send'/>
-                    </Grid>
-                    {/* <Button variant='contained' style={{padding: ' 0.7rem 4.5rem', fontSize: '1.9rem'}} color='primary'>SEND</Button> */}
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelI2WeD0F_KtFqwIULuM32tj4-5AEEpTz0z1aAfqcGvFTBbg/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </Grid>
-            </Grid>
+                </Grid>
                 
         
         </div>

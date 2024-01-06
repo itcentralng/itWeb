@@ -24,7 +24,7 @@ function Footer() {
             {/* <li><span className = 'span'><img src="Images/facebook.svg" alt="" /><img src="Images/linkedin.svg" alt="" /><img src="Images/twitter.svg" alt="" /></span></li> */}
             <li>
               <span>
-                <img src="Images/facebook.svg" alt="" />
+                <img src="Images/linkedin.svg" alt="" />
               </span>
               @itcentralng
             </li>
@@ -34,12 +34,12 @@ function Footer() {
               </span>
               @itcentralng
             </li>
-            <li>
+            {/* <li>
               <span>
                 <img src="Images/phone.svg" alt="" />
               </span>
               @itcentralng
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="customer--care">
@@ -48,13 +48,16 @@ function Footer() {
             <a href="/about" style={{ textDecoration: "none" }}>
               <li>About Us</li>
             </a>
-            <a href="/people" style={{ textDecoration: "none" }}>
-              <li>People</li>
+            <a href="/apply" style={{ textDecoration: "none" }}>
+              <li>Join Us</li>
             </a>
-            <a href="/summer-bootcamp" style={{ textDecoration: "none" }}>
+            <a href="/presentations" style={{ textDecoration: "none" }}>
+              <li>Presentations</li>
+            </a>
+            {/* <a href="/summer-bootcamp" style={{ textDecoration: "none" }}>
               <li>Summer Camp</li>
-            </a>
-            <li>Courses</li>
+            </a> */}
+            {/* <li>Courses</li> */}
             <li>Privacy Policy</li>
           </ul>
         </div>

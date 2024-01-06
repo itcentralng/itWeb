@@ -7,10 +7,6 @@ import Startup from "../components/Startup";
 import SummerSection from "../components/SummerSection";
 
 function HomePage() {
-  // if the url contains intRoW, then redirect to external link
-  if (window.location.href.includes("intRoW")) {
-    window.location.href = "https://forms.gle/g61MD1wvikD4RRH29";
-  }
   return (
     <>
       <HeroSection />

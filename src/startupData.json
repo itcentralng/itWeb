@@ -1,18 +1,25 @@
 [
     {
         "name": "Schoola",
-        "info": "Schoola is a gamified learning platform that does many things like magic. it is truly magical and it works well",
-        "icon": "schoola.svg",
-        "whiteIcon": "white-schoola.svg"
+        "info": "Schoola provides tools designed to make school learning fun, engaging and interactive",
+        "url": "https://schoola.app",
+        "icons": {
+            "filled":"schoola.svg",
+            "outline":"white-schoola.svg"
+        }
         
     
     },
     {
-        "name": "InstaFood",
-        "info": "Schoola is a gamified learning platform that does many things like magic. it is truly magical and it works well",
-        "icon": "schoola.svg",
-        "whiteIcon": "white-schoola.svg"
-
+        "name": "OneCenter",
+        "info": "OneCenter is an AI based customer care assistant for companies of all sizes",
+        "url": "https://onecenter.ai",
+        "icons": {
+            "filled":"onecenter.svg",
+            "outline":"white-onecenter.svg"
+        }
+        
+    
     }
 
 

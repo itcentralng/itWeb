@@ -77,8 +77,8 @@ function Explore() {
             <div id = 'left' onClick = {() =>scroll("left")}><i className="fa fa-arrow-left" style = {{fontSize:"1.8rem", opacity: '0.5'}}></i></div>
             <div onClick = {() => scroll("right")} id = 'right'><i className="fa fa-arrow-right" style = {{fontSize:"1.8rem", opacity: '0.5'}}></i></div>
         <div className="specialization">
-          <h2>Our Area of Expertise</h2>
-          <p>IT Central specializes in providing software development services, including web and mobile development, UI/UX design, and training programs that help businesses and developers achieve their goals. Our team of experts have a wealth of experience in a variety of technologies and programming languages, and we have served a range of clients including Julius Berger Nigeria, Nigerian Airforce and Schoola</p>
+          <h2>Our Promise</h2>
+          <p>We are commitmented is to relentlessly support, nurture, and empower Northern Nigeria's tech community. We pledge to provide unwavering guidance, resources, and opportunities, fostering an environment where innovation thrives, talents flourish, and impactful ventures emerge. Our dedication lies in creating a lasting legacy of technological advancement, economic growth, and global recognition for Northern Nigeria's vibrant tech landscape.</p>
         </div>
       {/* <div className="advert">
       </div> */}

@@ -1,21 +1,25 @@
 [
     {
-        "name": "Julius Berger",
+        "name": "Julius Berger Plc",
         "Image": "Images/julius-berger.svg"
         
     
     },
     {
-        "name": "Schoola",
-        "Image": "Images/schoola.svg"
-        
-    
+        "name": "PrimeTech Engineering",
+        "Image": "Images/primetech.png"  
     },
     {
-        "name": "Air Force",
-        "Image": "Images/airforce.png"
-        
-        
+        "name": "Nigerian Air Force",
+        "Image": "Images/airforce.png"  
+    },
+    {
+        "name": "AFCSC",
+        "Image": "Images/afcsc.gif"
+    },
+    {
+        "name": "Schoola",
+        "Image": "Images/schoola-logo.svg"
     }
 
 ]

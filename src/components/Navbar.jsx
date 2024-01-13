@@ -105,7 +105,7 @@ function Navbar() {
                 offset={-50}
                 duration={500}
               >
-                Join Us
+                Apply
               </Link>
             </li>
             <li className="nav--item">

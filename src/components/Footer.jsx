@@ -49,7 +49,7 @@ function Footer() {
               <li>About Us</li>
             </a>
             <a href="/apply" style={{ textDecoration: "none" }}>
-              <li>Join Us</li>
+              <li>Apply</li>
             </a>
             <a href="/presentations" style={{ textDecoration: "none" }}>
               <li>Presentations</li>

@@ -4,7 +4,7 @@ import Button from './Button'
 
 function Advert() {
   return (
-    <div className="advert">
+    <div style={{display:'none'}} className="advert">
       <div className="container">
         <div className="advert--writing">
           <h1>Are you a developer?</h1>
